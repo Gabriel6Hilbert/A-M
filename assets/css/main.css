@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.5;
+}
+
+/*Header*/
+
+#headerMain {
+    background-color: #345C64;
+    padding: 0.1rem;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#logoVerde {
+    width: 7.5rem;
+    height: auto;
+    display: block;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+
+.menu-header {
+    background-color: #345C64;
+    padding: 1.25rem;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    font-family: 'Georgia', serif;
+  }
+  
+  .menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.875rem; 
+    cursor: pointer;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .menu-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .cta-btn {
+    background-color: #e4e4e4;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.625rem;
+    box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0,0,0,0.2);
+    font-weight: bold;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #d6d6d6;
+  }
+
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #logoVerde {
+    width: 7.5rem;
+    height: auto;
+    display: block;
+  }
+  
+  .menu-header {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    font-family: 'Georgia', serif;
+  }
+
+  #adquiraPrecatorio{
+    height: 4.1em;
+  }
+
+  /*Marca D'agua*/
+  
+  section {
+    position: relative;
+    overflow: hidden;
+    /* height: 100vh; */
+  }
+  
+  .marca-dagua {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .marca-dagua.branco {
+    background-color: rgb(156, 156, 156);
+    background-image: url('../img/backgroundBranco.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .marca-dagua.azul {
+    background-color: #235461;
+    background-image: url('../img/backgroundVerde.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 0;
+    height: 65vh;
+  }
+
+/* DEPOIMENTOS */
+.texto-depoimento h1 {
+  font-weight: bold;
+  color: #1e3c40;
+  margin-bottom: 1rem;
+}
+
+.texto-depoimento p {
+  color: #1e3c40;
+  margin-bottom: 0.5rem;
+}
+
+.video-depoimento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-placeholder {
+  background-color: rgba(30, 60, 64, 0.15);
+  width: 100%;
+  max-width: 60rem;
+  height: 30rem;       
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3); 
+  color: #1e3c40;
+}
+
+.btn-comprar {
+  background-color: #1E3C40;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  height: 4rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.3); 
+  cursor: pointer;
+}
+
+.btn-comprar:hover {
+  background-color: #2f5a5f;
+}
+
+/*TELA INICIO(SEGUNDA TELA)*/
+#inicio {
+  background-color: #4c6e76;
+  padding: 5rem 2rem;
+  color: #ffffff;
+}
+
+.titulo-principal {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.subtitulo-principal {
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.btn-melhorProposta {
+  background-color: #ffffff;
+  color: #1e3c40;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  white-space: normal; /* PERMITE QUEBRE DE LINHA */
+}
+
+.btn-melhorProposta:hover {
+  background-color: #e6e6e6;
+}
+
+/*TELA SOBRE EMPRESA*/
+#sobreEmpresa {
+  background-color: #f8f9fa;
+  color: #1e3c40;
+}
+
+.titulo-principal-sobre {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e3c40;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.subtitulo-principal-sobre {
+  font-size: 1.5rem;
+  color: #1e3c40;
+  margin-bottom: 2rem;
+}
+
+.card-sobre {
+  background-color: #2f545c;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+  height: 20rem;
+  opacity: 0.7;
+}
+
+#sobreEmpresaRodape{
+  font-size: 1.1rem;
+}
+
+.btn-interesse {
+  background-color: #1e3c40;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  height: 4rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.btn-interesse:hover {
+  background-color: #2f5a5f;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+  
+/*TELA MOTIVOS*/
+#motivosEscolha{
+  height: 100vh;
+}
+
+.titulo-principal-motivos {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e3c40;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+  
+  
