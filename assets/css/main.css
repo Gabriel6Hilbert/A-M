@@ -5,30 +5,31 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
     color: #212529;
     line-height: 1.5;
 }
 
-/*Header*/
-
-#headerMain {
+#headerMain { /*fundo cabeçalho todo*/
     background-color: #345C64;
-    padding: 0.1rem;
     text-align: center;
-    border-bottom: 1px solid #dee2e6;
+    /*border-bottom: 1px solid #000000;*/
 }
 
-#logoVerde {
+#logoVerde { /*logo cabeçalho*/
     width: 7.5rem;
     height: auto;
     display: block;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#logoVerde:hover{ /*logo cabeçalho quando passa o mouse*/
+  transform: scale(1.05);
 }
 
 
-.menu-header {
+.menu-header { /*parte atrás das opções do menu + espaçamento das opções*/
     background-color: #345C64;
     padding: 1.25rem;
     display: flex;
@@ -37,115 +38,114 @@ body {
     font-family: 'Georgia', serif;
   }
   
-  .menu-btn {
+  .menu-btn { /*opções do menu*/
     background: none;
     border: none;
     color: white;
     font-weight: bold;
-    font-size: 0.875rem; 
+    font-size: 1rem; 
     cursor: pointer;
-    text-shadow: 0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
+    text-shadow: .6rem .6rem 1.5rem rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    padding: .5rem;
   }
   
-  .menu-btn:hover {
-    text-decoration: underline;
+  .menu-btn:hover { /*opções do menu quando passa o mouse*/
+    transform: scale(1.1);
   }
   
-  .cta-btn {
+  .cta-btn { /*botão menu "adquira um precatório"*/
     background-color: #e4e4e4;
     border: none;
-    padding: 0.75rem 1.25rem;
-    border-radius: 0.625rem;
-    box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0,0,0,0.2);
+    padding: 0 .8rem 0 .8rem;
+    height: 3.45rem;
+    border-radius: 0.6rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
     font-weight: bold;
-    font-size: 0.875rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
   }
   
-  .cta-btn:hover {
+  .cta-btn:hover { /*botão menu "adquira um precatório" quando passa o mouse*/
     background-color: #d6d6d6;
+    transform: scale(1.05);
   }
 
-
-  .header-container {
+  .header-container { /*espaçamento dos itens do cabeçalho*/
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
-  #logoVerde {
-    width: 7.5rem;
-    height: auto;
-    display: block;
-  }
-  
-  .menu-header {
-    display: flex;
-    gap: 1.25rem;
-    align-items: center;
-    font-family: 'Georgia', serif;
-  }
-
-  #adquiraPrecatorio{
-    height: 4.1em;
-  }
-
-  /*Marca D'agua*/
-  
-  section {
+  /*section {
     position: relative;
     overflow: hidden;
     /* height: 100vh; */
+  /*}*/
+  
+  .marca-dagua.branco { /*marca dagua dos fundos claros?*/
+    width: 100%;
+    height: 100%;
+    background-color: rgb(156, 156, 156);
+    background-image: url('../img/backgroundBranco.png');
+    background-repeat: no-repeat;
+    background-position: center 41%;
+    background-size: 70%;
+    opacity: 0.30;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   
-  .marca-dagua {
+  .marca-dagua.azul { /*fundo da marca dagua azul*/
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70%;
-    opacity: 0.15;
+    background-color: #235461; 
     pointer-events: none;
     z-index: 0;
+    overflow: hidden; 
   }
   
-  .marca-dagua.branco {
-    background-color: rgb(156, 156, 156);
-    background-image: url('../img/backgroundBranco.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60%;
-    opacity: 0.35;
-    pointer-events: none;
-    z-index: 0;
-  }
-  
-  .marca-dagua.azul {
-    background-color: #235461;
+  .marca-dagua.azul::before { /*marca dagua em si do fundo azul*/
+    content: "";
+    position: absolute;
+    inset: 0; 
     background-image: url('../img/backgroundVerde.png');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60%;
-    opacity: 1;
+    background-position: center 41%; 
+    background-size: 50%;
+    opacity: 0.5;
     pointer-events: none;
-    z-index: 0;
-    height: 65vh;
+    z-index: -1; 
   }
+  
 
-/* DEPOIMENTOS */
-.texto-depoimento h1 {
+.texto-depoimento h1 { /*título primeira tela*/
   font-weight: bold;
   color: #1e3c40;
-  margin-bottom: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  font-family: 'Georgia', serif;
+  
+  
+  width: 100%;
 }
 
-.texto-depoimento p {
+.texto-depoimento {
+  padding-left: 0rem;
+}
+
+.texto-depoimento p { /*texto ao lado do vídeo; sobre o cliente*/
   color: #1e3c40;
   margin-bottom: 0.5rem;
+  
 }
 
 .video-depoimento {
