@@ -5,9 +5,11 @@
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>A&M Precatórios</title>
-  <link rel="icon" type="image/png" href="assets/img/logo letra escura sem fundo.png"> <!-- ícone -->
+  <link rel="icon" type="image/png" href="assets/img/logo letra escura sem fundo.png"> <!-- ícone na aba de navegação-->
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel="stylesheet" href="assets/dist/bootstrap5.3.3.dist.css"> <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- ícones do bootstrap -->
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'> <!-- css -->
   <!-- <script src='main.js'></script> -->
 </head>
@@ -17,49 +19,51 @@
     <div class="header-container">
       <img src="assets/img/logoVerde.1.jpg" id="logoVerde" alt="Logo Verde"> <!-- logo cabeçalho -->
 
-      <div class="menu-header">
+      <div class="menu-header"> <!-- menu -->
         <button class="menu-btn">DEPOIMENTOS</button>
         <button class="menu-btn">INÍCIO</button>
         <button class="menu-btn">SOBRE</button>
         <button class="menu-btn">COMO FUNCIONA</button>
         <button class="cta-btn" id="adquiraPrecatorio">ADQUIRA UM PRECATÓRIO!</button>
       </div>
+
     </div>
   </header>
 
-  <!-- Section-Depoimentos --> <!-- Primeira página -->
+  <!-- section depoimentos --> <!-- primeira página -->
   <section id="depoimento-section" class="position-relative py-5 bg-light">
     <div class="marca-dagua branco"></div>
-  
-    <div class="container position-relative" style="z-index: 1;"> 
-      <div class="row">
-        <div class="col-md-6 texto-depoimento ps-5">
+
+    <div class="container position-relative" style="z-index: 1;">
+      <div class="row justify-content-between align-items-center mb-4">
+        <div class="col-md-6 texto-depoimento text-center text-md-start">
           <h1>QUEM JÁ COMPROU COM<br>A A&M PRECATÓRIOS?</h1>
           <p><strong>Conheça mais dessa história no vídeo:</strong></p>
         </div>
-        <div class="col-md-6 video-depoimento">
+        <div class="col-md-6 video-depoimento d-flex justify-content-start">
           <div class="video-placeholder">
             <span>VÍDEO</span>
           </div>
         </div>
       </div>
-  
+
       <div class="row mt-5">
         <div class="col text-center">
           <button class="btn-comprar">QUERO COMPRAR UM PRECATÓRIO</button>
-        </div> 
+        </div>
       </div>
-    </div> 
+    </div>
   </section>
 
-  <!--Section-Inicio-->
+  <!-- section início --> <!-- segunda página -->
   <section id="inicio" class="position-relative py-5 bg-light">
     <div class="marca-dagua azul"></div>
+
     <div class="container-fluid position-relative" style="z-index: 1;">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-lg-4 ps-5">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-7 text-center">
           <h1 class="titulo-principal">
-            ADQUIRA UM PRECATÓRIO E TRANSFORME VALOR EM RESULTADO,<br>
+            ADQUIRA UM PRECATÓRIO E TRANSFORME VALOR <br> EM RESULTADO,
             COM SEGURANÇA E AGILIDADE!
           </h1>
           <p class="subtitulo-principal">
@@ -67,45 +71,48 @@
             e recebe o valor que merece.
           </p>
           <button class="btn-melhorProposta">
-            QUERO ENCONTRAR A<br>MELHOR PROPOSTA
+            QUERO ENCONTRAR A MELHOR PROPOSTA
           </button>
         </div>
       </div>
     </div>
   </section>
 
-  <!--Section-Sobre-->
+  <!-- section sobre --> <!-- terceira página -->
   <section id="sobreEmpresa" class="position-relative py-5 bg-light">
     <div id="sobreEmpresaBackground" class="marca-dagua branco"></div>
 
-    <div class="container position-relative" style="z-index: 1;">
+    <div class="container position-relative text-center" style="z-index: 1;">
 
-      <div class="row justify-content-center text-center mb-4">
-        <div class="col-lg-8">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-10">
           <h1 class="titulo-principal-sobre">INTERESSADO EM INVESTIR?</h1>
           <p class="subtitulo-principal-sobre">
             A A&M Precatórios conecta você às melhores oportunidades na compra de precatórios.
           </p>
         </div>
       </div>
+
       <div class="row justify-content-center mb-4">
         <div class="col-md-8">
           <div class="card-sobre text-white text-center p-4">
             <h4 class="mb-3">QUEM SOMOS?</h4>
-            <p><strong>*SOBRE A EMPRESA*</strong></p>
+            <p id="textoSobreAEmpresa"><strong>*SOBRE A EMPRESA*</strong></p>
           </div>
         </div>
       </div>
+
       <div class="row justify-content-center text-start mb-4">
         <div class="col-md-8" id="sobreEmpresaRodape">
-          <p><i class="fas fa-check-square me-2"></i> Transparência, seriedade e especialização.</p>
-          <p><i class="far fa-clock me-2"></i> Oferecemos as melhores propostas para a compra de precatórios, sempre
+          <p><i class="bi bi-shield-check" id="icone"></i> Transparência, seriedade e especialização.</p>
+          <p><i class="bi bi-clock" id="icone"></i>Oferecemos as melhores propostas para a compra de precatórios, sempre
             respeitando a sua confiança.</p>
         </div>
       </div>
+
       <div class="row justify-content-center text-center">
         <div class="col-md-6">
-          <button class="btn-interesse">TEM INTERESSE? CLIQUE AQUI</button>
+          <button class="btn-comprar">TEM INTERESSE? CLIQUE AQUI</button>
         </div>
       </div>
 
@@ -113,20 +120,283 @@
   </section>
 
 
-  <!--Section-Escolha-->
+  <!-- section escolha --> <!-- quarta página -->
   <section id="motivosEscolha" class="position-relative py-5 bg-light">
-    <div class="marca-dagua azul"></div>
+    <div id="logoPag4" class="marca-dagua azul"></div>
 
     <div class="container position-relative" style="z-index: 1;">
       <div class="row justify-content-center text-center mb-4">
         <div class="col-lg-8">
-          <h1 class="titulo-principal-motivo">PORQUE ESCOLHER A A&M PRECATÓRIOS?</h1>
+          <h1 class="titulo-principal-motivo">POR QUE ESCOLHER A A&M PRECATÓRIOS?</h1>
+        </div>
+
+        <!--cards motivos-->
+        <div class="container my-5">
+          <div class="row justify-content-center g-4">
+
+            <!-- card 1 -->
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card text-center shadow rounded card-ponto">
+                <div class="card-body">
+                  <small class="text-muted d-block mb-2">*ICONE*</small>
+                  <div class="badge text-white mb-3 px-3 py-2">
+                    PONTO 1
+                  </div>
+                  <p class="fw-bold mt-3">*SOBRE*</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card text-center shadow rounded card-ponto">
+                <div class="card-body">
+                  <small class="text-muted d-block mb-2">*ICONE*</small>
+                  <div class="badge text-white mb-3 px-3 py-2">
+                    PONTO 2
+                  </div>
+                  <p class="fw-bold mt-3">*SOBRE*</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card text-center shadow rounded card-ponto">
+                <div class="card-body">
+                  <small class="text-muted d-block mb-2">*ICONE*</small>
+                  <div class="badge text-white mb-3 px-3 py-2">
+                    PONTO 3
+                  </div>
+                  <p class="fw-bold mt-3">*SOBRE*</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card text-center shadow rounded card-ponto">
+                <div class="card-body">
+                  <small class="text-muted d-block mb-2">*ICONE*</small>
+                  <div class="badge text-white mb-3 px-3 py-2">
+                    PONTO 4
+                  </div>
+                  <p class="fw-bold mt-3">*SOBRE*</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-melhorProposta">TEM INTERESSE? CLIQUE AQUI</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section passos --> <!-- quinta página -->
+  <section id="passos-section" class="position-relative py-5 bg-light">
+    <div id="logoPag5" class="marca-dagua branco"></div>
+
+    <div class="container position-relative" style="z-index: 1;">
+      <div class="row justify-content-center mb-4">
+        <div class="col-12 texto-depoimento text-center">
+          <h1>VEJA COMO É SIMPLES COMPRAR SEU PRECATÓRIO</h1>
+        </div>
+      </div>
+
+      <!--cards passos-->
+      <div class="container my-5 d-flex flex-column align-items-center">
+        <div class="row justify-content-center g-4 w-100">
+
+          <!-- card 1 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card text-center shadow rounded card-passos">
+              <div class="card-body">
+                <i class="bi bi-1-circle-fill text-white"></i>
+                <div class="badge bg-light text-black mb-3 px-3 py-2">
+                  PROPOSTA
+                </div>
+                <p class="fw-bold mt-3 text-white">*SOBRE*</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card text-center shadow rounded card-passos">
+              <div class="card-body">
+                <i class="bi bi-2-circle-fill text-white"></i>
+                <div class="badge bg-light text-black mb-3 px-3 py-2">
+                  ANÁLISE
+                </div>
+                <p class="fw-bold mt-3 text-white">*SOBRE*</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card text-center shadow rounded card-passos">
+              <div class="card-body">
+                <i class="bi bi-3-circle-fill text-white"></i>
+                <div class="badge bg-light text-black mb-3 px-3 py-2">
+                  CONTRATO
+                </div>
+                <p class="fw-bold mt-3 text-white">*SOBRE*</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card text-center shadow rounded card-passos">
+              <div class="card-body">
+                <i class="bi bi-4-circle-fill text-white"></i>
+                <div class="badge bg-light text-black mb-3 px-3 py-2">
+                  PAGAMENTO
+                </div>
+                <p class="fw-bold mt-3 text-white">*SOBRE*</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="botaoPag5" class="btn-comprar">QUERO MEU PRECATÓRIO</button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- banner seja parceiro/dentro da quinta página-->
+  <section id="contato" class="position-relative py-5 bg-light">
+    <div id="logoPag6" class="marca-dagua branco"></div>
+
+    <div id="banner" class="container-fluid text-center">
+      <h1 id="tamanhoDoTitulo" class="fw-bold mb-4">SEJA UM PARCEIRO DA A&M PRECATÓRIOS!</h1>
+      <div id="cardDentroDoBanner" class="card text-center shadow rounded mx-auto">
+        <div class="card-body">
+          <p id="textoBanner" class="fw-bold mb-4">
+            SOMOS A PONTE PARA NEGOCIAÇÕES SEGURAS E<br>
+            ESTRATÉGICAS EM PRECATÓRIOS.
+          </p>
+          <a id="botaoPag6" class="btn">QUERO SER PARCEIRO</a>
         </div>
       </div>
     </div>
 
+    <!-- container do título + form + aside -->
+    <div class="container position-relative" style="z-index:1;">
+
+      <!-- título isolado -->
+      <div class="row justify-content-center text-center mb-4">
+        <div class="col-12 texto-depoimento text-center">
+          <h1 id="tituloContato">ENTRE EM CONTATO CONOSCO!</h1>
+        </div>
+      </div>
+
+      <!-- aside -->
+      <div class="contato-flex">
+        <aside>
+          <button class="info-btn" id="tipoDeContato">Telefone/WhatsApp</button>
+          <div class="info-text">31 999999999</div>
+
+          <button class="info-btn" id="tipoDeContato">E-mail</button>
+          <div class="info-text">
+            <a href="mailto:xxxx@xxx.com">xxxx@xxx.com</a>
+          </div>
+
+          <button class="info-btn" id="tipoDeContato">Endereço</button>
+          <div class="info-text">xxxxxxx</div>
+        </aside>
+
+        <!-- formulário -->
+        <div id="parteAtrasDoFormulario" class="text-white py-2">
+          <form id="formExemplo">
+            <div class="mb-3">
+              <label for="nome" class="form-label text-white" id="nomeCompleto">Nome completo</label>
+              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+              <label for="telefone" class="form-label text-white">Telefone</label>
+              <input type="tel" class="form-control" id="telefone" placeholder="(31) 99999-9999">
+            </div>
+            <div class="mb-3">
+              <label for="processo" class="form-label text-white">Número de processo</label>
+              <input type="text" class="form-control" id="processo" placeholder="Número do processo">
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label text-white">Escreva sua mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+            <button id="botaoFormulario" type="submit" class="btn btn-light">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- rodapé -->
+    <footer>
+      <div id="parteEscuraRodape" class="text-white text-center py-2">
+        <div class="container-fluid px-0 d-flex align-items-center">
+          <img id="logoRodape" src="assets/img/logo rodape2.png" alt="Logo A&M">
+          <span class="fw-bold mx-auto text-center">A&M PRECATÓRIOS 2025 © Todos os direitos reservados</span>
+        </div>
+      </div>
+
+      <div class="container py-4">
+        <div class="row text-center text-md-start">
+
+          <div class="col-md-2 mb-3">
+            <div class="fw-bold mb-1"><i class="bi bi-telephone"></i> Telefone/WhatsApp</div>
+            <div class="text-muted small">telefone</div>
+          </div>
+
+          <div class="col-md-2 mb-3">
+            <div class="fw-bold mb-1"><i class="bi bi-envelope"></i> E-mail</div>
+            <div class="text-muted small">e-mail</div>
+          </div>
+
+          <div class="col-md-2 mb-3">
+            <div class="fw-bold mb-1"><i class="bi bi-geo-alt"></i> Endereço</div>
+            <div class="text-muted small">endereço</div>
+          </div>
+
+          <div class="col-md-2 mb-3">
+            <div class="fw-bold mb-1">CNPJ</div>
+            <div class="text-muted small">cnpj</div>
+          </div>
+
+          <div class="col-md-2 mb-3">
+            <div class="fw-bold mb-1">Razão social</div>
+            <div class="text-muted small">razão social</div>
+          </div>
+
+          <div class="col-md-2 mb-3">
+            <div class="fw-bold mb-1">Institucional</div>
+            <ul class="list-unstyled text-muted small">
+              <li>Depoimentos</li>
+              <li>Início</li>
+              <li>Sobre</li>
+              <li>Como funciona</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center mt-3">
+          <span class="fw-bold me-2">Redes sociais</span>
+          <a href="#" class="text-dark me-2"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="text-dark me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+        </div>
+
+      </div>
+
+    </footer>
 
   </section>
+
 
 
 </body>
