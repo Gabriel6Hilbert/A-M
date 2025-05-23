@@ -535,9 +535,34 @@ aside{ /*posição dos elementos do aside*/
   max-width: 4rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
-  
 }
 
-#logoRodape:hover{
+#logoRodape:hover { /*logo do rodapé quando passa o mouse*/
   transform: scale(1.05);
 }
+ 
+.marca-dagua { /*faz o hover no rodapé funcionar*/
+  pointer-events: none; 
+}
+
+#depoimento,
+#inicioRodape,
+#sobre,
+#comoFunciona,
+#adqUmPrecat{ /*opções do "institucional"*/
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#depoimento:hover,
+#inicioRodape:hover,
+#sobre:hover,
+#comoFunciona:hover,
+#adqUmPrecat:hover{ /*opções do "institucional" quando passa o mouse*/
+  color: #000000;
+  transform: scale(1.05);
+}
+
+
+
+
+
