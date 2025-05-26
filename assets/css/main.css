@@ -1,144 +1,194 @@
-*{ /*universal*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  /*universal*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f8f9fa;
-    font-family: 'Georgia', serif;
+  background-color: #f8f9fa;
+  font-family: 'Georgia', serif;
 }
 
-#headerMain { /*fundo cabeçalho todo*/
-    background-color: #345C64;
-    text-align: center;
-    position: relative; 
-    z-index: 1000; /*faz o cabeçalho ficar acima de tudo*/
-    min-height: 5rem;
-    box-shadow: 0rem 1rem .5rem rgba(0, 0, 0, 0.3);
+#headerMain {
+  /*fundo cabeçalho todo*/
+  background-color: #345C64;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+  /*faz o cabeçalho ficar acima de tudo*/
+  min-height: 5rem;
+  box-shadow: 0rem 1rem .5rem rgba(0, 0, 0, 0.3);
 }
 
-#logoVerde { /*logo cabeçalho*/
-    width: 7.5rem;
-    height: auto;
-    display: block;
-    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+#logoVerde {
+  /*logo cabeçalho*/
+  width: 7.5rem;
+  height: auto;
+  display: block;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
-#logoVerde:hover{ /*logo cabeçalho quando passa o mouse*/
+#logoVerde:hover {
+  /*logo cabeçalho quando passa o mouse*/
   transform: scale(1.05);
 }
 
-.menu-header { /*parte atrás das opções do menu + espaçamento das opções*/
-    background-color: #345C64;
-    padding: 1.25rem;
-    display: flex;
-    gap: 1.25rem;
-    align-items: center;
-    font-family: 'Georgia', serif;
-  }
-  
-  .menu-btn { /*opções do menu*/
-    background: none;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem; 
-    cursor: pointer;
-    text-shadow: .6rem .6rem 1.5rem rgb(0, 0, 0);
-    transition: transform 0.3s ease;
-    padding: 1rem;
-    margin-right: 1rem;
-  }
-  
-  .menu-btn:hover { /*opções do menu quando passa o mouse*/
-    transform: scale(1.1);
-  }
-  
-  .cta-btn { /*botão menu "adquira um precatório"*/
-    background-color: #e4e4e4;
-    border: none;
-    padding: 0 .8rem 0 .8rem;
-    height: 3.45rem;
-    border-radius: 0.6rem;
-    box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
-    font-weight: bold;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    transition: transform 0.3s ease;
-  }
-  
-  .cta-btn:hover { /*botão menu "adquira um precatório" quando passa o mouse*/
-    background-color: #d6d6d6;
-    transform: scale(1.05);
-  }
+.menu-header {
+  /*parte atrás das opções do menu + espaçamento das opções*/
+  background-color: #345C64;
+  padding: 1.25rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  flex-wrap: wrap;
+}
 
-  .header-container { /*espaçamento dos itens do cabeçalho*/
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .marca-dagua.branco { /*marca dagua dos fundos claros*/
-    width: 100%;
-    height: 100%;
-    background-color: rgb(156, 156, 156);
-    background-image: url('../img/backgroundBranco.png');
-    background-repeat: no-repeat;
-    background-position: center 46%;
-    background-size: 70%;
-    opacity: 0.20;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .marca-dagua.azul { /*fundo da página azul*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #235461; 
-    z-index: 0;
-    overflow: hidden; 
-  }
-  
-  .marca-dagua.azul::before { /*marca dagua em si do fundo azul*/
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/backgroundVerde.png');
-    background-repeat: no-repeat;
-    background-position: center 41%; 
-    background-size: 50%;
-    opacity: .1;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
+.menu-btn {
+  /*opções do menu*/
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  text-shadow: .6rem .6rem 1.5rem rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.menu-btn:hover {
+  /*opções do menu quando passa o mouse*/
+  transform: scale(1.1);
+}
+
+.cta-btn {
+  /*botão menu "adquira um precatório"*/
+  background-color: #e4e4e4;
+  border: none;
+  padding: 0 .8rem 0 .8rem;
+  height: 3.45rem;
+  border-radius: 0.6rem;
+  box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
+  white-space: nowrap
+}
+
+.cta-btn:hover {
+  /*botão menu "adquira um precatório" quando passa o mouse*/
+  background-color: #d6d6d6;
+  transform: scale(1.05);
+}
+
+.header-container {
+  /*espaçamento dos itens do cabeçalho*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marca-dagua.branco {
+  /*marca dagua dos fundos claros*/
+  width: 100%;
+  height: 100%;
+  background-color: rgb(156, 156, 156);
+  background-image: url('../img/backgroundBranco.png');
+  background-repeat: no-repeat;
+  background-position: center 46%;
+  background-size: 70%;
+  opacity: 0.20;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.marca-dagua.azul {
+  /*fundo da página azul*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #235461;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.marca-dagua.azul::before {
+  /*marca dagua em si do fundo azul*/
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/backgroundVerde.png');
+  background-repeat: no-repeat;
+  background-position: center 41%;
+  background-size: 57%;
+  opacity: .1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn-zap {
+  /*botão do whatsapp*/
+  position: fixed;
+  bottom: 1.2rem;
+  right: .5rem;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 0.3rem 1.12rem;
+  border-radius: 1.5rem;
+  font-size: .75rem;
+  font-weight: bold;
+  box-shadow: 0 0.25rem 0.37rem rgba(0, 0, 0, 0.3);
+  z-index: 1050;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  gap: .8rem;
+}
+
+.fab-fa-whatsapp {
+  /*aumenta o ícone*/
+  size: 4rem;
+}
+
+.btn-zap:hover {
+  /*botão do whatsapp quando passa o mouse*/
+  background-color: #27b15c;
+}
+
 /*PRIMEIRA TELA*/
 
-.texto-depoimento h1 { /*título primeira tela*/
+.texto-depoimento h1 {
+  /*título primeira tela*/
   font-weight: bold;
   color: #1e3c40;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   font-family: 'Georgia', serif;
-  width: 50rem;
+  max-width: 50rem;
   font-size: 3rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-left: 3rem;
+  text-align: center;
 }
 
-.texto-depoimento { /*texto depoimento como um todo*/
+.texto-depoimento {
+  /*texto depoimento como um todo*/
   padding-left: 0rem;
+  transform: translateY(-6rem);
 }
 
-.texto-depoimento p { /*texto ao lado do vídeo; sobre o cliente*/
+.texto-depoimento p {
+  /*texto ao lado do vídeo; sobre o cliente*/
   color: #1e3c40;
   margin-bottom: 0.5rem;
   text-align: center;
@@ -146,25 +196,32 @@ body {
   font-family: 'Georgia', serif;
 }
 
-.video-depoimento { /*disposição do vídeo*/
+.video-depoimento {
+  /*disposição do vídeo*/
   display: flex;
   align-items: center;
 }
 
-.video-placeholder { /*caixa do vídeo*/
+.video-placeholder {
+  /*caixa do vídeo*/
   background-color: rgba(0, 0, 0, 0.15);
   width: 100%;
-  max-width: 60rem;
-  min-height: 30rem;    
+  max-width: 40rem;
+  min-height: 30rem;
   border-radius: 0.75rem;
   display: flex;
   box-shadow: 0 0.25rem 0.62rem rgba(0, 0, 0, 0.3);
-  align-items: center; /*só altera a palavra "vídeo"*/
-  justify-content: center; /*só altera a palavra "vídeo"*/
-  color: #000000; /*só altera a palavra "vídeo"*/
+  align-items: center;
+  /*só altera a palavra "vídeo"*/
+  justify-content: center;
+  /*só altera a palavra "vídeo"*/
+  color: #000000;
+  /*só altera a palavra "vídeo"*/
+  margin-top: 1rem;
 }
 
-.btn-comprar { /*todos os botões azuis*/
+.btn-comprar {
+  /*todos os botões azuis*/
   background-color: #1E3C40;
   color: white;
   font-weight: bold;
@@ -177,78 +234,108 @@ body {
   transition: transform 0.3s ease;
   font-size: 1.5rem;
   font-family: 'Georgia', serif;
-  margin-top: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
-.btn-comprar:hover { /*todos os botões azuis quando passa o mouse*/
+.btn-comprar:hover {
+  /*todos os botões azuis quando passa o mouse*/
   background-color: #2f5a5f;
   transform: scale(1.05);
 }
 
+#fundoTela1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(156, 156, 156);
+  background-image: url('../img/backgroundBranco.png');
+  background-repeat: no-repeat;
+  background-position: center 38%;
+  background-size: 69%;
+  opacity: 0.20;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /*SEGUNDA TELA*/
 
-#inicio { /*fundo azul*/
+#inicio {
+  /*fundo azul*/
   background-color: #4c6e76;
   color: #ffffff;
   height: 36rem;
 }
 
-.titulo-principal { /*título segunda tela*/
+.titulo-principal {
+  /*título segunda tela*/
   font-size: 2.5rem;
   font-weight: 700;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   text-align: center;
-  font-family: 'Georgia', serif;
-  max-width: 70rem; 
+  max-width: 70rem;
+  margin-inline: auto;
 }
 
-.subtitulo-principal { /*texto segunda tela*/
+.subtitulo-principal {
+  /*texto segunda tela*/
   font-size: 1.7rem;
   margin-top: 5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   color: #f0f0f0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   text-align: center;
   font-family: 'Georgia', serif;
 }
 
-.btn-melhorProposta { /*todos os botões brancos - menos o do menu*/
+.btn-melhorProposta {
+  /*todos os botões brancos - menos o do menu*/
   background-color: #ffffff;
-  color: #1e3c40; 
-  font-weight: bold; 
-  font-size: 1.5rem; 
-  padding: .3rem 1rem; 
-  border-radius: 0.5rem; 
-  border: none; 
-  box-shadow: 0 0.25rem 0.62rem rgba(0, 0, 0, 0.3); 
+  color: #1e3c40;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: .3rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.25rem 0.62rem rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   transition: transform 0.3s ease;
-  margin-top: 4rem;
-  text-align: center; /*esse ?*/
-  flex-direction: column;       
-  justify-content: center;      /* centra verticalmente */
-  align-items: center;          /* centra horizontalmente */
-  /*white-space: normal;  PERMITE QUEBRE DE LINHA*/ 
+  text-align: center;
+  /*esse ?*/
+  flex-direction: column;
+  justify-content: center;
+  /* centra verticalmente */
+  align-items: center;
+  /* centra horizontalmente */
+  white-space: normal;
 }
 
-.btn-melhorProposta:hover { /*todos os botões brancos quando passa o mouse - menos o do menu*/
+.btn-melhorProposta:hover {
+  /*todos os botões brancos quando passa o mouse - menos o do menu*/
   background-color: #e6e6e6;
   transform: scale(1.05);
 }
 
 /*TERCEIRA TELA*/
-#sobreEmpresaBackground{ /*fundo/logo da terceira tela*/
+#sobreEmpresaBackground {
+  /*fundo/logo da terceira tela*/
   background-position: center 39%;
-  background-size: 75%;
+  background-size: 85%;
   position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.20;
 }
 
-#sobreEmpresa { /*fundo*/
+#sobreEmpresa {
+  /*fundo*/
   background-color: #f8f9fa;
   color: #1e3c40;
 }
 
-.titulo-principal-sobre { /*título terceira tela*/
+.titulo-principal-sobre {
+  /*título terceira tela*/
   font-size: 3rem;
   font-weight: 700;
   color: #1e3c40;
@@ -256,18 +343,19 @@ body {
   font-family: 'Georgia', serif;
 }
 
-.subtitulo-principal-sobre { /*texto terceira tela*/
+.subtitulo-principal-sobre {
+  /*texto terceira tela*/
   font-size: 1.5rem;
   color: #1e3c40;
   margin-bottom: 2rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   font-family: 'Georgia', serif;
-  margin-top: 1.5rem;
-  white-space: nowrap;
+  margin-top: 2rem;
   text-align: center;
 }
 
-.card-sobre { /*caixa Quem Somos*/
+.card-sobre {
+  /*caixa Quem Somos*/
   background-color: #2f545c;
   border-radius: 0.75rem;
   box-shadow: 0 0.25rem 0.62rem rgba(0, 0, 0, 0.3);
@@ -276,12 +364,14 @@ body {
   transition: transform 0.3s ease;
 }
 
-.card-sobre:hover{ /*caixa Quem Somos quando passa o mouse*/
+.card-sobre:hover {
+  /*caixa Quem Somos quando passa o mouse*/
   background-color: #2f5a5f;
   transform: scale(1.05);
 }
 
-h4{ /*título do texto dentro da caixa Quem Somos*/
+h4 {
+  /*título do texto dentro da caixa Quem Somos*/
   font-size: 2rem;
   color: #ffffff;
   margin-bottom: 2rem;
@@ -290,7 +380,8 @@ h4{ /*título do texto dentro da caixa Quem Somos*/
   margin-top: 1.5rem;
 }
 
-#textoSobreAEmpresa{ /*texto dentro da caixa Quem Somos*/
+#textoSobreAEmpresa {
+  /*texto dentro da caixa Quem Somos*/
   font-size: 1rem;
   color: #ffffff;
   margin-bottom: 2rem;
@@ -299,143 +390,231 @@ h4{ /*título do texto dentro da caixa Quem Somos*/
   margin-top: 1.5rem;
 }
 
-#sobreEmpresaRodape{ /*itens abaixo da caixa Quem Somos*/
+#sobreEmpresaRodape {
+  /*itens abaixo da caixa Quem Somos*/
   font-size: 1.5rem;
 }
 
-#sobreEmpresaRodape p { /*alinhar os textos*/
+#sobreEmpresaRodape p {
+  /*alinhar os textos*/
   display: grid;
   grid-template-columns: auto 1fr;
-  margin-top: 0.3rem; 
+  margin-top: 0.3rem;
 }
 
-#icone{ /*ícones*/
+#icone {
+  /*ícones*/
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
 /*QUARTA TELA*/
 
-#motivosEscolha{ /*fundo da quarta tela*/
-  max-height: 85vh;
+#motivosEscolha {
+  /*fundo da quarta tela*/
+  max-height: unset;
+  height: auto;
 }
 
-#logoPag4::before{ /*fundo/logo da pag 4*/
-  background-size: 67%;
+#logoPag4::before {
+  /*fundo/logo da pag 4*/
+  background-size: 71%;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: center 41%; 
+  background-position: center 41%;
   position: absolute;
 }
 
-.titulo-principal-motivo{ /*título quarta tela*/
+.titulo-principal-motivo {
+  /*título quarta tela*/
   font-size: 3rem;
   font-weight: 700;
   color: #ffffff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.badge{ /*título "ponto..."*/
+.badge {
+  /*título "ponto..."*/
   font-size: 1.2rem;
   background-color: #1E3C40;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.badge:hover{ /*título "ponto..." quando passa o mouse*/
+.badge:hover {
+  /*título "ponto..." quando passa o mouse*/
   background-color: #2f5a5f;
   transform: scale(1.05);
 }
 
-.card-ponto { /*caixa dos pontos*/
-  min-height: 25rem; 
+.card-ponto {
+  /*caixa dos pontos*/
+  height: auto;
   box-shadow: 0 0.25rem 0.62rem rgba(0, 0, 0, 0.3);
 }
 
-/*VEJA COMO É SIMPLES...*/
+#btnPag4 {
+  /*botão página 4*/
+  background-color: #ffffff;
+  color: #1e3c40;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: .3rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.25rem 0.62rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
+  white-space: normal;
+  margin-top: 2rem;
+  text-align: center;
+  /*esse ?*/
+  flex-direction: column;
+  justify-content: center;
+  /* centra verticalmente */
+  align-items: center;
+  /* centra horizontalmente */
+}
 
-#logoPag5{ /*fundo/logo da pag 5*/
-  background-size: 82%;
+#btnPag4:hover {
+  /*botão página 4 quando passa o mouse*/
+  background-color: #e6e6e6;
+  transform: scale(1.05);
+}
+
+/*QUINTA TELA*/
+
+
+#titulopag5 {
+  font-weight: bold;
+  color: #1e3c40;
+  max-width: 100%;
+  font-size: 3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-inline: 1rem;
+}
+
+#logoPag5 {
+  /*fundo/logo da pag 5*/
+  background-size: 72%;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: center 39%; 
+  background-position: center 39%;
   position: absolute;
 }
 
-.card-passos{ /*caixona dos passos*/
-  min-height: 25rem; 
+.card-passos {
+  /*caixona dos passos*/
+  height: auto;
   box-shadow: 0 0.25rem 0.62rem rgba(0, 0, 0, 0.3);
   background-color: #2f545c;
 }
 
-#passos-section .card .badge { /*deixa o número e o título um embaixo do outro*/
+.texto-passos {
+  font-weight: bold;
+  color: #7bf0ff;
+  max-width: 60rem;
+  font-size: 3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#passos-section .card .badge {
+  /*deixa o número e o título um embaixo do outro*/
   display: block;
 }
 
 .bi-1-circle-fill,
-.bi-2-circle-fill, 
+.bi-2-circle-fill,
 .bi-3-circle-fill,
-.bi-4-circle-fill { /*números*/
+.bi-4-circle-fill {
+  /*números*/
   display: block;
   font-size: 1.7rem;
   text-align: left;
 }
 
-.badge.bg-light.text-black.mb-3.px-3.py-2 { /*alinhando os títulos "proposta, análise..."*/
-  margin: 0.5rem auto 1rem; 
+.badge.bg-light.text-black.mb-3.px-3.py-2 {
+  /*alinhando os títulos "proposta, análise..."*/
+  margin: 0.5rem auto 1rem;
   max-width: 10rem;
 }
 
-#botaoPag5{ /*botão "quero meu precatório"*/
+#botaoPag5 {
+  /*botão "quero meu precatório"*/
   margin-bottom: 0rem;
-  margin-top: 6rem;
+  margin-top: 8rem;
+  font-size: 1.5rem;
 }
 
-.card-passos { /*distancia os cards passos do título*/
+.card-passos {
+  /*distancia os cards passos do título*/
   margin-top: 3rem;
 }
 
 /*BANNER*/
 
-#banner{ /*caixa do banner "seja um parceiro..."*/
+#cardDentroDoBanner .card-body {
+  position: relative;
+  z-index: 2;
+}
+
+#banner {
+  /*caixa do banner "seja um parceiro..."*/
   background-color: #1E3C40;
   border-radius: 2rem;
   box-shadow: 1rem 1rem 3rem #1E3C40;
   margin-top: 2rem;
   padding-top: 2rem;
   padding-bottom: 3rem;
-  max-width: 110rem;
+  max-width: 100rem;
   min-height: 25rem;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  margin-bottom: 7rem;
+  margin-bottom: 12rem;
 }
 
-#banner:hover{ /*caixa do banner quando passa o mouse*/
+#banner:hover {
+  /*caixa do banner quando passa o mouse*/
   background-color: #2f5a5f;
   transform: scale(1.05);
 }
 
-#tamanhoDoTitulo{ /*título "seja um parceiro..."*/
+#tamanhoDoTitulo {
+  /*título "seja um parceiro..."*/
   font-size: 3rem;
   text-align: center;
   color: #ffffff;
 }
 
-#cardDentroDoBanner{ /*caixa branca dentro do banner*/
+#cardDentroDoBanner {
+  /*caixa branca dentro do banner*/
   max-width: 100rem;
-  width: 90%;   
+  width: 90%;
   margin: 2rem auto;
   min-height: 20rem;
 }
 
-#textoBanner{ /*texto dentro da caixa branca dentro do banner*/
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
-  color: #1E3C40;
+#logoBanner {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center 39%;
+  background-size: 40%;
+  position: absolute;
 }
 
-#botaoPag6{ /*botão do banner*/
+#textoBanner {
+  /*texto dentro da caixa branca dentro do banner*/
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: #1E3C40;
+  padding-top: 2rem;
+}
+
+#botaoPag6 {
+  /*botão do banner*/
   background-color: #1E3C40;
   color: white;
   font-weight: bold;
@@ -445,31 +624,34 @@ h4{ /*título do texto dentro da caixa Quem Somos*/
   cursor: pointer;
   font-size: 1.5rem;
   margin-top: 3rem;
+
 }
 
-#botaoPag6:hover{ /*botão do banner quando passa o mouse*/
+#botaoPag6:hover {
+  /*botão do banner quando passa o mouse*/
   background-color: #2f5a5f;
 }
 
 /*ENTRE EM CONTATO CONOSCO*/
 
-#tituloContato{ /*espaço entre o título e o formulário*/
-  margin-bottom: 2rem;
-  white-space: nowrap;
+#tituloContato {
+  /*espaço entre o título e o formulário*/
+  margin-bottom: 1rem;
+  ;
 }
 
-#logoPag6{ /*logo no fundo/parte do formulário*/
-  background-size: 97%;
-  width: 100%;
-  height: 100%;
+#logoPag6 {
+  /*logo no fundo/parte do formulário*/
+  background-size: 70%;
   background-repeat: no-repeat;
-  background-position: center 0%; 
+  background-position: center 100%;
   position: absolute;
-} 
+}
 
 /*FORMULÁRIO*/
 
-#parteAtrasDoFormulario{ /*fundo azul do formulário*/
+#parteAtrasDoFormulario {
+  /*fundo azul do formulário*/
   background-color: #1E3C40;
   border-radius: 2rem;
   box-shadow: 1rem 1rem 3rem #1E3C40;
@@ -478,32 +660,37 @@ h4{ /*título do texto dentro da caixa Quem Somos*/
   margin-bottom: 5rem;
 }
 
-#nomeCompleto{ /*distância da borda do formulário para "nome completo"*/
+#nomeCompleto {
+  /*distância da borda do formulário para "nome completo"*/
   padding-top: 1rem;
 }
 
-#botaoFormulario{ /*botão "enviar" do formulário*/
+#botaoFormulario {
+  /*botão "enviar" do formulário*/
   margin-top: 1rem;
   margin-bottom: 2rem;
   background-color: #f0f0f0;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-#botaoFormulario:hover{ /*botão "enviar" do formulário quando passa o mouse*/
+#botaoFormulario:hover {
+  /*botão "enviar" do formulário quando passa o mouse*/
   color: #000000;
   transform: scale(1.05);
 }
 
 /*CONTATOS ASIDE*/
 
-#tipoDeContato{ /*caixinha do "telefone, email, endereço"*/
+#tipoDeContato {
+  /*caixinha do "telefone, email, endereço"*/
   background-color: #1E3C40;
   color: white;
   border-radius: .5rem;
 }
 
-aside{ /*posição dos elementos do aside*/
-  margin-top: 9rem; 
+aside {
+  /*posição dos elementos do aside*/
+  margin-top: 9rem;
   flex: 0 0 30%;
   display: flex;
   flex-direction: column;
@@ -511,45 +698,53 @@ aside{ /*posição dos elementos do aside*/
 }
 
 .info-text,
-.info-btn { /*centraliza os dados "telefone, email, endereço"*/
-  text-align: center;     
+.info-btn {
+  /*centraliza os dados "telefone, email, endereço"*/
+  text-align: center;
 }
 
-.contato-flex { /*garante a posição do aside*/
+.contato-flex {
+  /*garante a posição do aside*/
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
-#parteAtrasDoFormulario { /*fundo azul do formulário*/
+#parteAtrasDoFormulario {
+  /*fundo azul do formulário*/
   flex: 0 0 60%;
   max-width: 50rem;
 }
 
 /*RODAPÉ*/
 
-#parteEscuraRodape{ /*faixa escura do rodapé*/
+#parteEscuraRodape {
+  /*faixa escura do rodapé*/
   background-color: #1E3C40;
 }
 
-#logoRodape{ /*logo do rodapé*/
-  max-width: 4rem;
+#logoRodape {
+  /*logo do rodapé*/
+  max-width: 6rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
-#logoRodape:hover { /*logo do rodapé quando passa o mouse*/
+#logoRodape:hover {
+  /*logo do rodapé quando passa o mouse*/
   transform: scale(1.05);
 }
- 
-.marca-dagua { /*faz o hover no rodapé funcionar*/
-  pointer-events: none; 
+
+.marca-dagua {
+  /*faz o hover no rodapé funcionar*/
+  pointer-events: none;
 }
 
 #depoimento,
 #inicioRodape,
 #sobre,
 #comoFunciona,
-#adqUmPrecat{ /*opções do "institucional"*/
+#adqUmPrecat {
+  /*opções do "institucional"*/
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -557,12 +752,232 @@ aside{ /*posição dos elementos do aside*/
 #inicioRodape:hover,
 #sobre:hover,
 #comoFunciona:hover,
-#adqUmPrecat:hover{ /*opções do "institucional" quando passa o mouse*/
-  color: #000000;
+#adqUmPrecat:hover {
+  /*opções do "institucional" quando passa o mouse*/
+  color: #bdb4b4;
   transform: scale(1.05);
 }
 
+/*RESPONSIVIDADE*/
+/* RESPONSIVIDADE: ATÉ 768px*/
+@media (max-width: 768px) {
+
+  /* Cabeçalho */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .menu-header {
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .menu-btn,
+  .cta-btn {
+    width: 100%;
+    margin: 0;
+  }
+
+  #logoVerde {
+    width: 6rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Primeira tela - vídeo e texto */
+  .video-depoimento {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .texto-depoimento h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .texto-depoimento p {
+    font-size: 1.2rem;
+  }
+
+  .video-placeholder {
+    max-width: 100%;
+    min-height: 15rem;
+  }
+
+  /* Segunda e terceira telas */
+  .titulo-principal,
+  .titulo-principal-sobre {
+    font-size: 2rem;
+  }
+
+  .subtitulo-principal,
+  .subtitulo-principal-sobre {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  /* Cards de motivos e passos */
+  .card-ponto,
+  .card-passos {
+    min-height: auto;
+  }
+
+  .container-fluid {
+    padding-inline: 1rem;
+  }
+
+  /* Banner */
+  #tamanhoDoTitulo {
+    font-size: 2rem;
+  }
+
+  #textoBanner {
+    font-size: 1.2rem;
+  }
+
+  /* Contato (formulário + aside) */
+  .contato-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #parteAtrasDoFormulario {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  aside {
+    flex: unset;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  /* Rodapé */
+  #parteEscuraRodape .container-fluid,
+  #parteEscuraRodape .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #logoRodape {
+    margin-bottom: 1rem;
+  }
+
+  #linksRodape {
+    align-items: center;
+
+  }
+
+  .cta-btn,
+  .btn-comprar,
+  .btn-melhorProposta,
+  #btnPag4,
+  #botaoPag5,
+  #botaoPag6,
+  #botaoFormulario {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.2rem;
+    padding: 0.75rem;
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+  }
+
+  #motivosEscolha {
+    /*fundo da quarta tela*/
+    max-height: unset;
+    height: auto;
+  }
+}
+
+/* RESPONSIVIDADE: ACIMA 768px*/
+@media (min-width: 769px) {
+
+  .titulo-principal,
+  .subtitulo-principal-sobre,
+  .texto-passos {
+    white-space: nowrap;
+    /* só impede quebra em telas grandes */
+  }
+}
 
 
+@media (max-width: 768px) {
+
+  .titulo-principal,
+  .subtitulo-principal-sobre,
+  .texto-passos {
+    white-space: norma;
+  }
+}
+
+@media (max-width: 576px) {
+  .texto-depoimento {
+    transform: translateY(0);
+    padding: 0 1rem;
+  }
+
+  .video-placeholder {
+    min-height: 12rem;
+  }
+
+  .subtitulo-principal,
+  .texto-passos,
+  #textoBanner {
+    font-size: 1rem;
+  }
+
+  #tamanhoDoTitulo {
+    font-size: 1.5rem;
+  }
+
+  #botaoPag6,
+  #botaoPag5,
+  #botaoFormulario {
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #parteEscuraRodape .d-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+}
 
 
+@media (max-width: 768px) {
+  .texto-depoimento h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-comprar {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-melhorProposta {
+    margin-bottom: 3rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-zap {
+    gap: .5rem;
+    font-size: 0; /* oculta texto sem remover o ícone */
+    width: auto;
+  }
+
+  .btn-zap i {
+    font-size: 1.5rem;
+  }
+}

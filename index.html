@@ -11,6 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <!-- ícones do bootstrap -->
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'> <!-- css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- para o ícone do wpp, que o bootstrap não tem -->
   <!-- <script src='main.js'></script> -->
 </head>
 
@@ -31,10 +32,15 @@
   </header>
 
   <!-- section depoimentos --> <!-- primeira página -->
-  <section id="depoimento-section" class="position-relative py-5 bg-light">
-    <div class="marca-dagua branco"></div>
 
-    <div class="container position-relative" style="z-index: 1;">
+  <button class="btn-zap"> <!-- botão whatsapp -->
+    <i class="fab fa-whatsapp fa-2x"></i> COMO PODEMOS TE AJUDAR?
+  </button> 
+
+  <section id="depoimento-section" class="position-relative py-5 bg-light">
+    <div id="fundoTela1" class="marca-dagua branco"></div>
+
+    <div class="container-fluid" style="z-index: 1;">
       <div class="row justify-content-between align-items-center mb-4">
         <div class="col-md-6 texto-depoimento text-center text-md-start">
           <h1>QUEM JÁ COMPROU COM<br>A A&M PRECATÓRIOS?</h1>
@@ -61,7 +67,7 @@
 
     <div class="container-fluid position-relative" style="z-index: 1;">
       <div class="row justify-content-center mb-4">
-        <div class="col-lg-7 text-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center mx-auto">
           <h1 class="titulo-principal">
             ADQUIRA UM PRECATÓRIO E TRANSFORME VALOR <br> EM RESULTADO,
             COM SEGURANÇA E AGILIDADE!
@@ -187,7 +193,7 @@
             </div>
           </div>
 
-          <button class="btn-melhorProposta">TEM INTERESSE? CLIQUE AQUI</button>
+          <button id="btnPag4">TEM INTERESSE? CLIQUE AQUI</button>
 
         </div>
       </div>
@@ -198,10 +204,10 @@
   <section id="passos-section" class="position-relative py-5 bg-light">
     <div id="logoPag5" class="marca-dagua branco"></div>
 
-    <div class="container position-relative" style="z-index: 1;">
-      <div class="row justify-content-center mb-4">
-        <div class="col-12 texto-depoimento text-center">
-          <h1>VEJA COMO É SIMPLES COMPRAR SEU PRECATÓRIO</h1>
+    <div class="container-fluid position-relative" style="z-index: 1;">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+          <h1 id="titulopag5">VEJA COMO É SIMPLES COMPRAR SEU PRECATÓRIO</h1>
         </div>
       </div>
 
@@ -275,6 +281,7 @@
     <div id="banner" class="container-fluid text-center">
       <h1 id="tamanhoDoTitulo" class="fw-bold mb-4">SEJA UM PARCEIRO DA A&M PRECATÓRIOS!</h1>
       <div id="cardDentroDoBanner" class="card text-center shadow rounded mx-auto">
+        <div id="logoBanner" class="marca-dagua branco"></div>
         <div class="card-body">
           <p id="textoBanner" class="fw-bold mb-4">
             SOMOS A PONTE PARA NEGOCIAÇÕES SEGURAS E<br>
@@ -290,7 +297,7 @@
 
       <!-- título isolado -->
       <div class="row justify-content-center text-center mb-4">
-        <div class="col-12 texto-depoimento text-center">
+        <div class="col-md-8 texto-depoimento text-center text-md-start">
           <h1 id="tituloContato">ENTRE EM CONTATO CONOSCO!</h1>
         </div>
       </div>
@@ -338,54 +345,59 @@
 
     <!-- rodapé -->
     <footer>
-      <div id="parteEscuraRodape" class="text-white text-center py-2">
+      <div id="parteEscuraRodape" class="text-white text-center py-0">
         <div class="container-fluid px-0 d-flex align-items-center">
           <img id="logoRodape" src="assets/img/logo rodape2.png" alt="Logo A&M">
-          <span class="fw-bold mx-auto text-center">A&M PRECATÓRIOS 2025 © Todos os direitos reservados</span>
+          <span id="direitosAutorais" class="fw-bold mx-auto text-center">A&M PRECATÓRIOS 2025 © Todos os direitos
+            reservados</span>
         </div>
+
+        <div class="container py-4">
+          <div class="d-flex justify-content-between flex-wrap gx-2">
+            <div class="flex-fill text-center">
+              <div class="fw-bold"><i class="bi bi-telephone"></i> Telefone/WhatsApp</div>
+              <small class="text-white">telefone</small>
+            </div>
+
+            <div class="flex-fill text-center">
+              <div class="fw-bold"><i class="bi bi-envelope"></i> E-mail</div>
+              <small class="text-white">e-mail</small>
+            </div>
+
+            <div class="flex-fill text-center">
+              <div class="fw-bold"><i class="bi bi-geo-alt"></i> Endereço</div>
+              <small class="text-white">endereço</small>
+            </div>
+
+            <div class="flex-fill text-center">
+              <div class="fw-bold">CNPJ</div>
+              <small class="text-white">cnpj</small>
+            </div>
+
+            <div class="flex-fill text-center">
+              <div class="fw-bold">Razão social</div>
+              <small class="text-white">razão social</small>
+            </div>
+
+            <div class="flex-fill text-center">
+              <div class="fw-bold">Institucional</div>
+              <nav aria-label="Links do rodapé">
+                <ul id="linksRodape" class="list-unstyled d-flex flex-column mb-0">
+                  <li id="depoimento"><a>Depoimentos</a></li>
+                  <li id="inicioRodape"><a>Início</a></li>
+                  <li id="sobre"><a>Sobre</a></li>
+                  <li id="comoFunciona"><a>Como funciona</a></li>
+                  <li id="adqUmPrecat"><a>Adquira um precatório</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
-      <div class="container py-4">
-        <div class="d-flex justify-content-between flex-wrap gx-2">
-          <div class="flex-fill text-center">
-            <div class="fw-bold"><i class="bi bi-telephone"></i> Telefone/WhatsApp</div>
-            <small class="text-muted">telefone</small>
-          </div>
 
-          <div class="flex-fill text-center">
-            <div class="fw-bold"><i class="bi bi-envelope"></i> E-mail</div>
-            <small class="text-muted">e-mail</small>
-          </div>
-
-          <div class="flex-fill text-center">
-            <div class="fw-bold"><i class="bi bi-geo-alt"></i> Endereço</div>
-            <small class="text-muted">endereço</small>
-          </div>
-
-          <div class="flex-fill text-center">
-            <div class="fw-bold">CNPJ</div>
-            <small class="text-muted">cnpj</small>
-          </div>
-
-          <div class="flex-fill text-center">
-            <div class="fw-bold">Razão social</div>
-            <small class="text-muted">razão social</small>
-          </div>
-
-          <div class="flex-fill text-center">
-            <div class="fw-bold">Institucional</div>
-            <nav aria-label="Links do rodapé">
-              <ul id="linksRodape" class="list-unstyled d-flex flex-column mb-0">
-                <li id="depoimento"><a>Depoimentos</a></li>
-                <li id="inicioRodape"><a>Início</a></li>
-                <li id="sobre"><a>Sobre</a></li>
-                <li id="comoFunciona"><a>Como funciona</a></li>
-                <li id="adqUmPrecat"><a>Adquira um precatório</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
     </footer>
   </section>
 
