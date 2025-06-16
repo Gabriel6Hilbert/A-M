@@ -823,7 +823,7 @@ aside {
   .card-passos {
     min-height: auto;
   }
-
+  
   .container-fluid {
     padding-inline: 1rem;
   }
@@ -836,6 +836,9 @@ aside {
   #textoBanner {
     font-size: 1.2rem;
   }
+  
+
+  
 
   /* Contato (formulário + aside) */
   .contato-flex {
