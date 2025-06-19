@@ -129,7 +129,7 @@ body {
   background-image: url('../img/backgroundVerde.png');
   background-repeat: no-repeat;
   background-position: center 41%;
-  background-size: 57%;
+  background-size: 75%;
   opacity: .1;
   position: absolute;
   top: 0;
@@ -179,6 +179,7 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   margin-left: 3rem;
   text-align: center;
+  margin: 0 auto;
 }
 
 .texto-depoimento {
@@ -251,12 +252,41 @@ body {
   background-image: url('../img/backgroundBranco.png');
   background-repeat: no-repeat;
   background-position: center 38%;
-  background-size: 69%;
+  background-size: 90%;
   opacity: 0.20;
   position: absolute;
   top: 0;
   left: 0;
 }
+
+.card-depoimento {
+  background-color: #4c6e76;
+  border-radius: 0.55rem;
+  padding: 0.25rem;
+  box-shadow: 0 0.25rem 0.62rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-depoimento:hover {
+  transform: scale(1.1); 
+}
+
+.card-depoimento img {
+  width: 100%;         
+  height: 100px;       
+  object-fit: cover;   
+  border-radius: 0.5rem;
+}
+
+#vejaMaisComentarios{
+  text-decoration: none;
+}
+
 
 /*SEGUNDA TELA*/
 
@@ -320,7 +350,7 @@ body {
 #sobreEmpresaBackground {
   /*fundo/logo da terceira tela*/
   background-position: center 39%;
-  background-size: 85%;
+  background-size: 100%;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -438,7 +468,10 @@ h4 {
   /*título "ponto..."*/
   font-size: 1.2rem;
   background-color: #1E3C40;
+  color: white;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .badge:hover {
@@ -449,8 +482,45 @@ h4 {
 
 .card-ponto {
   /*caixa dos pontos*/
-  height: auto;
   box-shadow: 0 0.25rem 0.62rem rgba(0, 0, 0, 0.3);
+  min-height: 22rem;
+  max-height: 100%;
+  text-align: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card-ponto:hover {
+  transform: translateY(-20px);
+}
+
+#motivosEscolha .container {
+  padding: 0 1rem;
+}
+
+.osMotivos {
+  text-align: justify;
+  font-size: 0.95rem;
+  text-indent: 1em;
+  color: #1e3c40;
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: 'Georgia', serif;
+}
+
+.tituloDosMotivos{ /*título com o motivo - dentro de cada card*/
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: bold;
 }
 
 #btnPag4 {
@@ -482,8 +552,14 @@ h4 {
   transform: scale(1.05);
 }
 
-/*QUINTA TELA*/
+@media (max-width: 768px) {
+  .card-ponto {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
 
+/*QUINTA TELA*/
 
 #titulopag5 {
   font-weight: bold;
@@ -497,7 +573,7 @@ h4 {
 
 #logoPag5 {
   /*fundo/logo da pag 5*/
-  background-size: 72%;
+  background-size: 100%;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -507,7 +583,7 @@ h4 {
 
 .card-passos {
   /*caixona dos passos*/
-  height: auto;
+  min-height: 20rem;
   box-shadow: 0 0.25rem 0.62rem rgba(0, 0, 0, 0.3);
   background-color: #2f545c;
 }
@@ -550,9 +626,16 @@ h4 {
 }
 
 .card-passos {
-  /*distancia os cards passos do título*/
   margin-top: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.card-passos:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
 
 /*BANNER*/
 
@@ -569,7 +652,7 @@ h4 {
   margin-top: 2rem;
   padding-top: 2rem;
   padding-bottom: 3rem;
-  max-width: 100rem;
+  max-width: 80rem;
   min-height: 25rem;
   transition: transform 0.3s ease, background-color 0.3s ease;
   margin-bottom: 12rem;
@@ -637,14 +720,13 @@ h4 {
 #tituloContato {
   /*espaço entre o título e o formulário*/
   margin-bottom: 1rem;
-  ;
 }
 
 #logoPag6 {
   /*logo no fundo/parte do formulário*/
-  background-size: 70%;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center 100%;
+  background-position: center 85%;
   position: absolute;
 }
 
@@ -724,9 +806,16 @@ aside {
 
 #logoRodape {
   /*logo do rodapé*/
-  max-width: 6rem;
+  max-width: 4rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+}
+
+.footer-divider{
+  border: 0;                   
+  height: 1px;
+  background-color: rgba(255,255,255,0.3);
+  margin: 0.25rem 0;  
 }
 
 #logoRodape:hover {
@@ -746,6 +835,7 @@ aside {
 #adqUmPrecat {
   /*opções do "institucional"*/
   transition: transform 0.3s ease, color 0.3s ease;
+  font-size: .7rem;
 }
 
 #depoimento:hover,
@@ -756,6 +846,15 @@ aside {
   /*opções do "institucional" quando passa o mouse*/
   color: #bdb4b4;
   transform: scale(1.05);
+  cursor: pointer;
+}
+
+.opcoesRodape{
+  font-size: .8rem;
+}
+
+.infoRodape{
+  font-size: .7rem;
 }
 
 /*RESPONSIVIDADE*/

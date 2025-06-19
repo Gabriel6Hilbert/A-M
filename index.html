@@ -33,10 +33,6 @@
 
   <!-- section depoimentos --> <!-- primeira página -->
 
-  <button class="btn-zap"> <!-- botão whatsapp -->
-    <i class="fab fa-whatsapp fa-2x"></i> COMO PODEMOS TE AJUDAR?
-  </button> 
-
   <section id="depoimento-section" class="position-relative py-5 bg-light">
     <div id="fundoTela1" class="marca-dagua branco"></div>
 
@@ -58,6 +54,44 @@
           <button class="btn-comprar">QUERO VENDER MEU PRECATÓRIO</button>
         </div>
       </div>
+      
+      <div class="row justify-content-around mt-5 gx-4 gy-4" id="depoimento-cards">
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card-depoimento shadow-sm">
+            <img src="assets/img/comentario-pablo.png" alt="Comentário Pablo">
+          </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card-depoimento shadow-sm">
+            <img src="assets/img/comentario-andre.png" alt="Comentário André">
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card-depoimento shadow-sm">
+            <img src="assets/img/comentario-julia.png" alt="Comentário Marco">
+          </div>
+        </div>
+      </div>
+
+      <!-- Botão "veja mais comentários" abaixo dos cards -->
+      <div class="row mt-4">
+        <div class="col text-center">
+          <a href="https://www.google.com/search?q=A%26M+Precat%C3%B3rios+-+Rua+S%C3%A3o+Paulo+da+Cruz+-+Barreiro%2C+Belo+Horizonte+-+MG&rlz=1C1ONGR_pt-BRBR1165BR1165&oq=a&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg7MgYIAhBFGEAyBggDEEUYPDIGCAQQRRg8MgYIBRBFGD0yBggGEEUYPDIGCAcQRRg80gEIMTM2MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x8412870291c72ee9:0x60db41abd46c768e,1,,,,"
+            class="badge text-white px-4 py-2"
+            style="background-color: #1f2f2f;"
+            target="_blank" rel="noopener noreferrer"
+            id="vejaMaisComentarios">
+            veja mais comentários
+          </a>
+        </div>
+      </div>
+
+
     </div>
   </section>
 
@@ -68,7 +102,7 @@
     <div class="container-fluid position-relative" style="z-index: 1;">
       <div class="row justify-content-center mb-4">
         <div class="col-12 col-md-10 col-lg-8 text-center mx-auto">
-          <h1 class="titulo-principal">
+          <h1 class="titulo-principal text-center">
             NEGOCIE SEU PRECATÓRIO E TRANSFORME VALOR <br> EM RESULTADO,
             COM SEGURANÇA E AGILIDADE!
           </h1>
@@ -145,10 +179,10 @@
               <div class="card text-center shadow rounded card-ponto">
                 <div id="card-body-motivos" class="card-body">
                   <small class="text-muted d-block mb-2">*ICONE*</small>
-                  <div class="badge text-white mb-3 px-3 py-2">
+                  <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
                     Atendimento personalizado
                   </div>
-                  <p class="fw-bold mt-3">Cada cliente é único. A equipe da A&M oferece um atendimento humanizado, avaliando individualmente cada caso para propor a melhor solução, com total transparência.</p>
+                  <p class="fw-bold mt-3 osMotivos">Cada cliente é único. A equipe da A&M oferece um atendimento humanizado, avaliando individualmente cada caso para propor a melhor solução, com total transparência.</p>
                 </div>
               </div>
             </div>
@@ -158,10 +192,10 @@
               <div class="card text-center shadow rounded card-ponto">
                 <div class="card-body">
                   <small class="text-muted d-block mb-2">*ICONE*</small>
-                  <div class="badge text-white mb-3 px-3 py-2">
+                  <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
                     Especialização em precatórios
                   </div>
-                  <p class="fw-bold mt-3">A A&M é uma empresa focada exclusivamente nesse nicho, com profundo conhecimento jurídico e para garantir segurança e agilidade em todo o processo.</p>
+                  <p class="fw-bold mt-3 osMotivos">A A&M é uma empresa focada exclusivamente nesse nicho, com profundo conhecimento jurídico e para garantir segurança e agilidade em todo o processo.</p>
                 </div>
               </div>
             </div>
@@ -171,10 +205,10 @@
               <div class="card text-center shadow rounded card-ponto">
                 <div class="card-body">
                   <small class="text-muted d-block mb-2">*ICONE*</small>
-                  <div class="badge text-white mb-3 px-3 py-2">
+                  <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
                     Propostas justas e competitivas
                   </div>
-                  <p class="fw-bold mt-3">A A&M busca sempre propostas em todo o mercado de precatório, respeitando o momento do cliente e as particularidades do precatório, com margens extremamente competitivas.</p>
+                  <p class="fw-bold mt-3 osMotivos">A A&M busca sempre propostas em todo o mercado de precatório, respeitando o momento do cliente e as particularidades do precatório, com margens extremamente competitivas.</p>
                 </div>
               </div>
             </div>
@@ -184,11 +218,11 @@
               <div class="card text-center shadow rounded card-ponto">
                 <div class="card-body">
                   <small class="text-muted d-block mb-2">*ICONE*</small>
-                  <div class="badge text-white mb-3 px-3 py-2">
+                  <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
                     Transparência e credibilidade
                   </div>
-                  <p class="fw-bold mt-3">A empresa preza por relações de confiança, auxiliando em analises dos contratos e documentações. Você sabe exatamente o que está negociando.</p>
                 </div>
+                <p class="fw-bold mt-3 osMotivos">A empresa preza por relações de confiança, auxiliando em análises dos contratos e documentações. Você sabe exatamente o que está negociando.</p>
               </div>
             </div>
           </div>
@@ -223,7 +257,7 @@
                 <div class="badge bg-light text-black mb-3 px-3 py-2">
                   PROPOSTA
                 </div>
-                <p class="fw-bold mt-3 text-white">PDF simples e objetivo eviado via wpp ou email</p>
+                <p class="fw-bold mt-3 text-white">PDF simples e objetivo eviado via WhatsApp ou E-mail.</p>
               </div>
             </div>
           </div>
@@ -236,7 +270,7 @@
                 <div class="badge bg-light text-black mb-3 px-3 py-2">
                   ANÁLISE
                 </div>
-                <p class="fw-bold mt-3 text-white">Após o aceite da proposta, é realizada uma analise juridica do precatorio e do credor </p>
+                <p class="fw-bold mt-3 text-white">Após o aceite da proposta, é realizada uma análise jurídica do precatório e do credor. </p>
               </div>
             </div>
           </div>
@@ -249,7 +283,7 @@
                 <div class="badge bg-light text-black mb-3 px-3 py-2">
                   CONTRATO
                 </div>
-                <p class="fw-bold mt-3 text-white">Finalizada a analise juridica, é marcado com o cartório data e hora para assinar a escritura. Todo os procedimento são relaizados de forma online e facil, sem burocracia.</p>
+                <p class="fw-bold mt-3 text-white">Finalizada a análise jurídica, é marcado com o cartório data e hora para assinar a escritura. Todo os procedimento são realizados de forma online e fácil, sem burocracia.</p>
               </div>
             </div>
           </div>
@@ -262,13 +296,13 @@
                 <div class="badge bg-light text-black mb-3 px-3 py-2">
                   PAGAMENTO
                 </div>
-                <p class="fw-bold mt-3 text-white">Após a assinatura da escritura o pagemento sai em até 24h</p>
+                <p class="fw-bold mt-3 text-white">Após a assinatura da escritura, o pagemento sai em até 24h.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <button id="botaoPag5" class="btn-comprar">QUERO MEU PRECATÓRIO</button>
+        <button id="botaoPag5" class="btn-comprar">QUERO NEGOCIAR MEU PRECATÓRIO</button>
 
       </div>
     </div>
@@ -358,34 +392,35 @@
 
     <!-- rodapé -->
     <footer>
-      <div id="parteEscuraRodape" class="text-white text-center py-0">
+      <div id="parteEscuraRodape" class="text-white text-center">
         <div class="container-fluid px-0 d-flex align-items-center">
           <img id="logoRodape" src="assets/img/logo rodape2.png" alt="Logo A&M">
           <span id="direitosAutorais" class="fw-bold mx-auto text-center">A&M PRECATÓRIOS 2025 © Todos os direitos
             reservados</span>
         </div>
-
-        <div class="container py-4">
-          <div class="d-flex justify-content-between flex-wrap gx-2">
+        <hr class="footer-divider">
+        
+        <div class="container py-1">
+          <div class="d-flex justify-content-between flex-wrap">
             <div class="flex-fill text-center">
-              <div class="fw-bold"><i class="bi bi-telephone"></i> Telefone/WhatsApp</div>
-              <small class="text-white">(31) 99890-3846</small>
+              <div class="fw-bold opcoesRodape"><i class="bi bi-telephone"></i> Telefone/WhatsApp</div>
+              <small class="text-white infoRodape">(31) 99890-3846</small>
             </div>
 
             <div class="flex-fill text-center">
-              <div class="fw-bold"><i class="bi bi-envelope"></i> E-mail</div>
-              <small class="text-white">marcos@amprecatorios.com</small>
-              <small class="text-white">adrielle@amprecatorios.com</small>
+              <div class="fw-bold opcoesRodape"><i class="bi bi-envelope"></i> E-mail</div>
+              <small class="text-white infoRodape">marcos@amprecatorios.com</small><br>
+              <small class="text-white infoRodape">adrielle@amprecatorios.com</small>
             </div>
 
             <div class="flex-fill text-center">
-              <div class="fw-bold"><i class="bi bi-geo-alt"></i> Endereço</div>
-              <small class="text-white"> R. São Paulo da Cruz, 121 - Barreiro, Belo Horizonte - MG, 30642-060, Brasil</small>
+              <div class="fw-bold opcoesRodape"><i class="bi bi-geo-alt"></i> Endereço</div>
+              <small class="text-white infoRodape"> R. São Paulo da Cruz, 121 - Barreiro,<br> Belo Horizonte - MG, 30642-060, Brasil</small>
             </div>
 
             <div class="flex-fill text-center">
-              <div class="fw-bold">CNPJ</div>
-              <small class="text-white">53.639.277/0001-25</small>
+              <div class="fw-bold opcoesRodape">CNPJ</div>
+              <small class="text-white infoRodape">53.639.277/0001-25</small>
             </div>
 
             <!-- <div class="flex-fill text-center">
@@ -394,7 +429,7 @@
             </div> -->
 
             <div class="flex-fill text-center">
-              <div class="fw-bold">Institucional</div>
+              <div class="fw-bold opcoesRodape">Institucional</div>
               <nav aria-label="Links do rodapé">
                 <ul id="linksRodape" class="list-unstyled d-flex flex-column mb-0">
                   <li id="depoimento"><a>Depoimentos</a></li>
@@ -418,7 +453,7 @@
     <script>
       const numeroWhatsApp = '553198903846';
 
-      const mensagem = 'Ola, tenho interesse em negociar meu precatório.';
+      const mensagem = 'Olá! Tenho interesse em negociar meu precatório.';
 
       const botoesZap = [
         '.btn-zap',
