@@ -245,6 +245,10 @@ body {
   transform: scale(1.05);
 }
 
+#botaoPag5{
+  margin-top: 6rem !important;
+}
+
 #fundoTela1 {
   width: 100%;
   height: 100%;
@@ -259,6 +263,18 @@ body {
   left: 0;
 }
 
+.depoimentos-horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 2rem; /* menor para evitar quebra */
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  justify-content: center;
+}
+
+/* Regra geral — aplicável em qualquer tamanho */
 .card-depoimento {
   background-color: #4c6e76;
   border-radius: 0.55rem;
@@ -267,14 +283,11 @@ body {
   transition: transform 0.3s ease;
   height: auto;
   width: 100%;
+  max-width: 550px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-}
-
-.card-depoimento:hover {
-  transform: scale(1.03);
 }
 
 .card-depoimento img {
@@ -282,7 +295,49 @@ body {
   height: auto;
   object-fit: contain;
   border-radius: 0.5rem;
+  display: block;
+  border: 2px solid #3e5f63;
 }
+
+/* Hover só em telas grandes */
+@media (min-width: 992px) {
+  .depoimentos-horizontal {
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  .card-depoimento {
+    min-width: 500px;
+    height: 130px;
+  }
+
+  .card-depoimento:hover {
+    transform: scale(1.25);
+  }
+}
+
+/* Mobile (telas menores) */
+@media (max-width: 991px) {
+  .depoimentos-horizontal {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .card-depoimento {
+    min-width: 95vw;
+    max-width: 95vw;
+    height: auto;
+    padding: 0;
+  }
+
+  .card-depoimento img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+
 
 
 #vejaMaisComentarios{
@@ -300,14 +355,18 @@ body {
 }
 
 .titulo-principal {
-  /*título segunda tela*/
   font-size: 2.5rem;
   font-weight: 700;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  text-align: center;
   max-width: 70rem;
-  margin-inline: auto;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .subtitulo-principal {
   /*texto segunda tela*/
@@ -440,6 +499,10 @@ h4 {
   /*ícones*/
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+#btn-interesse{
+  white-space: nowrap;
 }
 
 /*QUARTA TELA*/
@@ -1144,4 +1207,101 @@ html, body {
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+/* Estilo base dos cards */
+.card-ponto,
+.card-passos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+/* Hover elegante */
+.card-ponto:hover,
+.card-passos:hover {
+  transform: translateY(-5px);
+}
+
+/* Título nos cards */
+.tituloDosMotivos {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: #1E3C40;
+  color: white;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  white-space: normal;
+}
+
+/* Texto interno dos cards */
+.osMotivos {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+  color: #333;
+}
+
+/* Botões refinados */
+#btnPag4,
+#botaoPag5 {
+  background-color: #1E3C40;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+#btnPag4:hover,
+#botaoPag5:hover {
+  background-color: #29585D;
+}
+
+/* Responsividade geral */
+@media (max-width: 768px) {
+  .card-ponto,
+  .card-passos {
+    margin-bottom: 1.5rem;
+  }
+
+  .tituloDosMotivos {
+    font-size: 0.9rem;
+  }
+
+  .osMotivos {
+    font-size: 0.9rem;
+  }
+
+  #btnPag4,
+  #botaoPag5 {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-ponto,
+  .card-passos {
+    padding: 1rem 0.8rem;
+  }
+
+  .tituloDosMotivos {
+    font-size: 0.85rem;
+  }
+
+  .osMotivos {
+    font-size: 0.85rem;
+    text-align: left;
+  }
 }

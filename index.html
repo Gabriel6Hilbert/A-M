@@ -13,6 +13,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'> <!-- css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- para o ícone do wpp, que o bootstrap não tem -->
   <!-- <script src='main.js'></script> -->
+   
 </head>
 
 <body>
@@ -55,28 +56,20 @@
         </div>
       </div>
       
-      <div class="row justify-content-around mt-5 gx-4 gy-4" id="depoimento-cards">
-        <!-- Card 1 -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card-depoimento shadow-sm">
-            <img src="assets/img/comentario-pablo.png" alt="Comentário Pablo">
-          </div>
-        </div>
-    
-        <!-- Card 3 -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card-depoimento shadow-sm">
-            <img src="assets/img/comentario-andre.png" alt="Comentário André">
-          </div>
+     <div class="depoimentos-horizontal" id="depoimento-cards">
+        <div class="card-depoimento shadow-sm">
+          <img src="assets/img/comentario-pablo.png" alt="Comentário Pablo">
         </div>
 
-        <!-- Card 4 -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card-depoimento shadow-sm">
-            <img src="assets/img/comentario-julia.png" alt="Comentário Marco">
-          </div>
+        <div class="card-depoimento shadow-sm">
+          <img src="assets/img/comentario-andre.png" alt="Comentário André">
         </div>
-      </div>
+
+        <div class="card-depoimento shadow-sm">
+          <img src="assets/img/comentario-julia.png" alt="Comentário Julia">
+        </div>
+     </div>
+
 
       <!-- Botão "veja mais comentários" abaixo dos cards -->
       <div class="row mt-4">
@@ -99,7 +92,7 @@
   <section id="inicio" class="position-relative py-5 bg-light">
     <div class="marca-dagua azul"></div>
 
-    <div class="container-fluid position-relative" style="z-index: 1;">
+    <div class="container position-relative" style="z-index: 1;">
       <div class="row justify-content-center mb-4">
         <div class="col-12 col-md-10 col-lg-8 text-center mx-auto">
           <h1 class="titulo-principal text-center">
@@ -138,8 +131,8 @@
           <div class="card-sobre text-white text-center p-4">
             <h4 class="mb-3">QUEM SOMOS?</h4>
             <p id="textoSobreAEmpresa"><strong>A A&M Precatórios é uma empresa especializada na compra e negociação de precatórios federais, estaduais e municipais. 
-              Nascemos com o propósito de oferecer soluções ágeis, seguras e transparentes para credores que desejam antecipar seus creditos com tranquilidade e confiança.
-            Na A&M, acreditamos que cada negociação é única — por isso, ouvimos, entendemos e construímos relações baseadas na confiança e na responsabilidade.</strong></p>
+              Nascemos com o propósito de oferecer soluções ágeis, seguras e transparentes para credores que desejam antecipar seus créditos com tranquilidade e confiança.
+            A A&M acredita que cada negociação é única — por isso, ouvimos, entendemos e construímos relações baseadas na confiança e responsabilidade.</strong></p>
           </div>
         </div>
       </div>
@@ -154,7 +147,7 @@
 
       <div class="row justify-content-center text-center">
         <div class="col-md-6">
-          <button class="btn-comprar">TEM INTERESSE? CLIQUE AQUI</button>
+          <button id="btn-interesse" class="btn-comprar">TEM INTERESSE? CLIQUE AQUI</button>
         </div>
       </div>
 
@@ -173,8 +166,7 @@
         </div>
 
         <!--cards motivos-->
-        <div class="container my-5">
-          <div class="row justify-content-center g-4">
+        <div class="row justify-content-center g-4 my-5">
 
             <!-- card 1 -->
             <div class="col-12 col-sm-6 col-md-3">
@@ -223,15 +215,14 @@
                   <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
                     Transparência e credibilidade
                   </div>
+                  <p class="fw-bold mt-3 osMotivos">A empresa preza por relações de confiança, auxiliando em análises dos contratos e documentações. Você sabe exatamente o que está negociando.</p>
                 </div>
-                <p class="fw-bold mt-3 osMotivos">A empresa preza por relações de confiança, auxiliando em análises dos contratos e documentações. Você sabe exatamente o que está negociando.</p>
               </div>
             </div>
           </div>
 
           <button id="btnPag4">TEM INTERESSE? CLIQUE AQUI</button>
 
-        </div>
       </div>
     </div>
   </section>
@@ -252,20 +243,20 @@
         <div class="row justify-content-center g-4 w-100">
 
           <!-- card 1 -->
-          <div class="col-12 col-sm-6 col-md-3">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="card text-center shadow rounded card-passos">
               <div class="card-body">
                 <i class="bi bi-1-circle-fill text-white"></i>
                 <div class="badge bg-light text-black mb-3 px-3 py-2">
                   PROPOSTA
                 </div>
-                <p class="fw-bold mt-3 text-white">PDF simples e objetivo eviado via WhatsApp ou E-mail.</p>
+                <p class="fw-bold mt-3 text-white">PDF simples e objetivo enviado via WhatsApp ou E-mail.</p>
               </div>
             </div>
           </div>
 
           <!-- card 2 -->
-          <div class="col-12 col-sm-6 col-md-3">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="card text-center shadow rounded card-passos">
               <div class="card-body">
                 <i class="bi bi-2-circle-fill text-white"></i>
@@ -278,27 +269,27 @@
           </div>
 
           <!-- card 3 -->
-          <div class="col-12 col-sm-6 col-md-3">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="card text-center shadow rounded card-passos">
               <div class="card-body">
                 <i class="bi bi-3-circle-fill text-white"></i>
                 <div class="badge bg-light text-black mb-3 px-3 py-2">
                   CONTRATO
                 </div>
-                <p class="fw-bold mt-3 text-white">Finalizada a análise jurídica, é marcado com o cartório data e hora para assinar a escritura. Todo os procedimento são realizados de forma online e fácil, sem burocracia.</p>
+                <p class="fw-bold mt-3 text-white">Após a análise jurídica, marca-se com o cartório data e hora para assinar a escritura. Todos os procedimentos são realizados de forma online e fácil, sem burocracia.</p>
               </div>
             </div>
           </div>
 
           <!-- card 4 -->
-          <div class="col-12 col-sm-6 col-md-3">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="card text-center shadow rounded card-passos">
               <div class="card-body">
                 <i class="bi bi-4-circle-fill text-white"></i>
                 <div class="badge bg-light text-black mb-3 px-3 py-2">
                   PAGAMENTO
                 </div>
-                <p class="fw-bold mt-3 text-white">Após a assinatura da escritura, o pagemento sai em até 24h.</p>
+                <p class="fw-bold mt-3 text-white">Após a assinatura da escritura, o pagamento sai em até 24h.</p>
               </div>
             </div>
           </div>
@@ -434,11 +425,11 @@
               <div class="fw-bold opcoesRodape">Institucional</div>
               <nav aria-label="Links do rodapé">
                 <ul id="linksRodape" class="list-unstyled d-flex flex-column mb-0">
-                  <li id="depoimento"><a>Depoimentos</a></li>
-                  <li id="inicioRodape"><a>Início</a></li>
-                  <li id="sobre"><a>Sobre</a></li>
-                  <li id="comoFunciona"><a>Como funciona</a></li>
-                  <li id="adqUmPrecat"><a>Adquira um precatório</a></li>
+                  <li id="depoimento" class="btn-atalho"><a>Depoimentos</a></li>
+                  <li id="inicioRodape" class="btn-atalho"><a>Início</a></li>
+                  <li id="sobre" class="btn-atalho"><a>Sobre</a></li>
+                  <li id="comoFunciona" class="btn-atalho"><a>Como funciona</a></li>
+                  <li id="adqUmPrecat" class="btn-atalho"><a>Adquira um precatório</a></li>
                 </ul>
               </nav>
             </div>
@@ -485,7 +476,7 @@
         'COMO FUNCIONA': '#passos-section'
       };
 
-      document.querySelectorAll('.menu-btn').forEach(botao => {
+      document.querySelectorAll('.menu-btn, .btn-atalho').forEach(botao => {
         botao.addEventListener('click', function () {
           const texto = botao.textContent.trim().toUpperCase();
           const alvo = mapaMenu[texto];
