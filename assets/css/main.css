@@ -87,7 +87,9 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   transition: transform 0.3s ease;
-  white-space: nowrap
+  white-space: nowrap;
+  text-decoration: none; 
+  color: inherit;        
 }
 
 .cta-btn:hover {
@@ -740,7 +742,7 @@ h4 {
 }
 
 #banner:hover {
-  /*caixa do banner quando passa o mouse*/
+  /*caixa azul do banner quando passa o mouse*/
   background-color: #2f5a5f;
   transform: scale(1.02);
 }
@@ -856,6 +858,11 @@ aside {
   gap: 1rem;
 }
 
+.info-text{ /*dados no aside*/
+  text-decoration: none; 
+  color: inherit; 
+}
+
 .info-text,
 .info-btn {
   /*centraliza os dados "telefone, email, endereço"*/
@@ -929,6 +936,8 @@ aside {
 .infoRodape {
   /*tamanho das opções no rodapé*/
   font-size: .7rem;
+  text-decoration: none; 
+  color: inherit; 
 }
 
 
@@ -940,6 +949,54 @@ aside {
 /*ATÉ 768px*/
 @media (max-width: 768px) {
 
+  #fundoTela1 {
+    /*marca dágua da tela 1*/
+    background-position: center 80%;
+    background-size: 100%;
+  }
+
+  .marca-dagua.azul::before {
+    /*marca dagua tela 2*/
+    background-position: center 60%;
+    background-size: 130%;
+  }
+
+  #sobreEmpresaBackground {
+    /*marca dagua tela 3*/
+    background-position: center 97%;
+    background-size: 120%;
+  }
+
+  #logoPag4::before {
+    /*marca dagua tela 4*/
+    background-size: 100%;
+    background-position: center 108%;
+  }
+
+  #logoPag5 {
+    /*marca dágua tela 5*/
+    background-size: 120%;
+    background-position: center 111%;
+    position: absolute;
+  }
+
+  #logoBanner {
+    /*marca dágua banner*/
+    background-position: center 39%;
+    background-size: 110%;
+  }
+
+  #cardDentroDoBanner {
+    /*caixa branca dentro do banner*/
+    min-height: 15rem;
+  }
+
+  #logoPag6 {
+    /*marca dágua tela 6*/
+    background-size: 120%;
+    background-position: center 73%;
+  }
+  
   /* Cabeçalho */
   .header-container {
     flex-direction: column;
