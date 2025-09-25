@@ -203,8 +203,15 @@ body {
 .video-depoimento {
   /*disposição do vídeo*/
   display: flex;
-  align-items: center;
-  padding-left: 4rem;
+  flex-direction: column; 
+  align-items: center;    
+  padding-left: 0;        
+}
+
+.video-depoimento p { /*frase embaixo do vídeo*/
+  max-width: 30rem;  
+  text-align: center;
+  word-wrap: break-word; 
 }
 
 .video-placeholder {
@@ -1183,7 +1190,7 @@ aside {
 
   .video-placeholder {
     /*caixa do vídeo*/
-    margin-right: 2.5rem;
+    margin-left: .5rem;
   }
 
   #inicio {
