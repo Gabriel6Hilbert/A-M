@@ -431,7 +431,7 @@
           <div class="d-flex justify-content-between flex-wrap">
             <div class="flex-fill text-center">
               <div class="fw-bold opcoesRodape"><i class="bi bi-telephone"></i> Telefone/WhatsApp</div>
-              <small class="text-white infoRodape">(31) 99890-3846</small>
+              <a href="https://wa.me/5531998903846?text=Ol%C3%A1,%20tenho%20interesse%20em%20entrar%20em%20contato" target="_blank" class="text-white infoRodape">(31) 99890-3846</a>
             </div>
 
             <!--e-mail-->
@@ -544,6 +544,15 @@
       window.open(`https://wa.me/${numeroDestino}?text=${textoWpp}`, '_blank');
     });
   </script>
+
+  <script>
+  document.getElementById('linkZap').addEventListener('click', function(e) {
+    e.preventDefault();
+    const numeroDestino = '5531998903846';
+    const mensagem = `Olá, gostaria de mais informações.%0AEncontrei seu contato no site.`;
+    window.open(`https://wa.me/${numeroDestino}?text=${mensagem}`, '_blank');
+  });
+</script>
 
 </body>
 
