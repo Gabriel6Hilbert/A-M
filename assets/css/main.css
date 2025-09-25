@@ -32,7 +32,7 @@ body {
 
 #logoVerde:hover {
   /*logo cabeçalho quando passa o mouse*/
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .menu-header {
@@ -201,13 +201,14 @@ body {
   /*disposição do vídeo*/
   display: flex;
   align-items: center;
+  padding-left: 4rem;
 }
 
 .video-placeholder {
   /*caixa do vídeo*/
   background-color: rgba(0, 0, 0, 0.15);
   width: 100%;
-  max-width: 40rem;
+  max-width: 30rem;
   min-height: 30rem;
   border-radius: 0.75rem;
   display: flex;
@@ -219,6 +220,27 @@ body {
   color: #000000;
   /*só altera a palavra "vídeo"*/
   margin-top: 1rem;
+}
+
+.texto-depoimento {
+  padding-left: 2rem; /* ou margin-left */
+}
+
+.video-depoimento iframe,
+.video-depoimento video {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+
+.video-depoimento video {
+  
+  
+  border-radius: .7rem;
+  object-fit: cover; /* corta para preencher */
+  object-position: 50% 40%;   /* mostra mais a parte de cima */
 }
 
 .btn-comprar {
@@ -238,6 +260,12 @@ body {
   position: relative;
   z-index: 2;
 }
+
+#botaoVenderPrimeiraPagina{
+  margin-top: .5rem;
+  margin-bottom: 2.5rem;
+}
+
 
 .btn-comprar:hover {
   /*todos os botões azuis quando passa o mouse*/
@@ -271,7 +299,36 @@ body {
   padding: 1rem;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  justify-content: center;
+  scroll-padding: 0 1rem; /* espaço no início e no fim */
+ 
+  
+  
+  
+}
+
+
+
+.depoimentos-horizontal::-webkit-scrollbar {
+  height: 3px;              /* altura da barra (horizontal) */
+  
+  
+}
+
+.depoimentos-horizontal::-webkit-scrollbar-track {
+  background: #e0e0e0;      /* cor do trilho */
+  border-radius: 4px;
+  
+}
+
+.depoimentos-horizontal::-webkit-scrollbar-thumb {
+  background: #345C64;      /* cor do "botão" que arrasta */
+  border-radius: 4px;
+  
+}
+
+.depoimentos-horizontal::-webkit-scrollbar-thumb:hover {
+  background: #2a464c;      /* cor quando passa o mouse */
+  
 }
 
 /* Regra geral — aplicável em qualquer tamanho */
@@ -280,15 +337,22 @@ body {
   border-radius: 0.55rem;
   padding: 0.25rem;
   box-shadow: 0 0.25rem 0.62rem rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
+  transition: transform 0.6s ease;
   height: auto;
-  width: 100%;
+  width: 50%;
   max-width: 550px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  z-index: 1;
+  
+  
 }
+
+
+
+
 
 .card-depoimento img {
   width: 100%;
@@ -299,11 +363,15 @@ body {
   border: 2px solid #3e5f63;
 }
 
+.card-depoimento:hover {
+  transform: scale(1.1);
+}
+
 /* Hover só em telas grandes */
 @media (min-width: 992px) {
   .depoimentos-horizontal {
     justify-content: center;
-    gap: 6rem;
+    gap: 2rem;
   }
 
   .card-depoimento {
@@ -311,9 +379,7 @@ body {
     height: 130px;
   }
 
-  .card-depoimento:hover {
-    transform: scale(1.25);
-  }
+  
 }
 
 /* Mobile (telas menores) */

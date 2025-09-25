@@ -11,13 +11,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <!-- ícones do bootstrap -->
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'> <!-- css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- para o ícone do wpp, que o bootstrap não tem -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- para o ícone do wpp, que o bootstrap não tem -->
   <!-- <script src='main.js'></script> -->
-   
 </head>
 
 <body>
   <header id="headerMain"> <!-- cabeçalho -->
+
     <div class="header-container">
       <img src="assets/img/logoVerde.1.jpg" id="logoVerde" alt="Logo Verde"> <!-- logo cabeçalho -->
 
@@ -28,35 +29,38 @@
         <button class="menu-btn">COMO FUNCIONA</button>
         <button class="cta-btn" id="adquiraPrecatorio">VENDA SEU PRECATÓRIO!</button>
       </div>
-
     </div>
+
   </header>
 
-  <!-- section depoimentos --> <!-- primeira página -->
+  <!-- section depoimentos/primeira página -->
 
   <section id="depoimento-section" class="position-relative py-5 bg-light">
-    <div id="fundoTela1" class="marca-dagua branco"></div>
+
+    <div id="fundoTela1" class="marca-dagua branco"></div> <!--marca dágua-->
 
     <div class="container-fluid" style="z-index: 1;">
       <div class="row justify-content-between align-items-center mb-4">
         <div class="col-md-6 texto-depoimento text-center text-md-start">
-          <h1>QUEM JÁ VENDEU COM<br>A A&M PRECATÓRIOS?</h1>
-          <p><strong>Conheça mais dessa história no vídeo:</strong></p>
+          <h1>QUEM JÁ VENDEU COM<br>A A&M PRECATÓRIOS?</h1> <!--título-->
+          <p><strong>Conheça mais dessa história no vídeo:</strong></p> <!--texto-->
         </div>
-        <div class="col-md-6 video-depoimento d-flex justify-content-start">
+        <div class="col-md-6 video-depoimento d-flex justify-content-start"> <!--vídeo-->
           <div class="video-placeholder">
-            <span>VÍDEO</span>
+            <video width="100%" height="500" controls>
+              <source src="assets/img/Vídeo Rafaela A E M.MP4" type="video/mp4">
+            </video>
           </div>
         </div>
       </div>
 
-      <div class="row mt-5">
+      <div class="row mt-5"> <!--botão comprar-->
         <div class="col text-center">
-          <button class="btn-comprar">QUERO VENDER MEU PRECATÓRIO</button>
+          <button id="botaoVenderPrimeiraPagina" class="btn-comprar">QUERO VENDER MEU PRECATÓRIO</button>
         </div>
       </div>
-      
-     <div class="depoimentos-horizontal" id="depoimento-cards">
+
+      <div class="depoimentos-horizontal" id="depoimento-cards"> <!--comentários-->
         <div class="card-depoimento shadow-sm">
           <img src="assets/img/comentario-pablo.png" alt="Comentário Pablo">
         </div>
@@ -68,173 +72,183 @@
         <div class="card-depoimento shadow-sm">
           <img src="assets/img/comentario-julia.png" alt="Comentário Julia">
         </div>
-     </div>
+      </div>
 
-
-      <!-- Botão "veja mais comentários" abaixo dos cards -->
+      <!-- botão "veja mais comentários" -->
       <div class="row mt-4">
         <div class="col text-center">
           <a href="https://www.google.com/search?q=A%26M+Precat%C3%B3rios+-+Rua+S%C3%A3o+Paulo+da+Cruz+-+Barreiro%2C+Belo+Horizonte+-+MG&rlz=1C1ONGR_pt-BRBR1165BR1165&oq=a&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg7MgYIAhBFGEAyBggDEEUYPDIGCAQQRRg8MgYIBRBFGD0yBggGEEUYPDIGCAcQRRg80gEIMTM2MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x8412870291c72ee9:0x60db41abd46c768e,1,,,,"
-            class="badge text-white px-4 py-2"
-            style="background-color: #1f2f2f;"
-            target="_blank" rel="noopener noreferrer"
-            id="vejaMaisComentarios">
-            veja mais avaliações
+            class="btn-comprar" target="_blank" rel="noopener noreferrer" id="vejaMaisComentarios">
+            VEJA MAIS AVALIAÇÕES
           </a>
         </div>
       </div>
-
-
     </div>
+
   </section>
 
-  <!-- section início --> <!-- segunda página -->
+  <!-- section início/segunda página -->
   <section id="inicio" class="position-relative py-5 bg-light">
-    <div class="marca-dagua azul"></div>
+
+    <div class="marca-dagua azul"></div> <!--marca dágua-->
 
     <div class="container position-relative" style="z-index: 1;">
       <div class="row justify-content-center mb-4">
         <div class="col-12 col-md-10 col-lg-8 text-center mx-auto">
           <h1 class="titulo-principal text-center">
-            NEGOCIE SEU PRECATÓRIO E TRANSFORME VALOR <br> EM RESULTADO,
+            NEGOCIE SEU PRECATÓRIO E TRANSFORME VALOR <br> EM RESULTADO, <!--título-->
             COM SEGURANÇA E AGILIDADE!
           </h1>
-          <p class="subtitulo-principal">
+          <p class="subtitulo-principal"> <!--sub-título-->
             Na A&M Precatórios, você negocia com confiança<br>
             e recebe o valor que merece.
           </p>
-          <button class="btn-melhorProposta">
+          <button class="btn-melhorProposta"> <!--botão comprar-->
             QUERO ENCONTRAR A MELHOR PROPOSTA
           </button>
         </div>
       </div>
     </div>
+
   </section>
 
-  <!-- section sobre --> <!-- terceira página -->
+  <!-- section sobre/terceira página -->
   <section id="sobreEmpresa" class="position-relative py-5 bg-light">
-    <div id="sobreEmpresaBackground" class="marca-dagua branco"></div>
+
+    <div id="sobreEmpresaBackground" class="marca-dagua branco"></div> <!--marca dágua-->
 
     <div class="container position-relative text-center" style="z-index: 1;">
-
       <div class="row justify-content-center mb-4">
         <div class="col-lg-10">
-          <h1 class="titulo-principal-sobre">INTERESSADO EM VENDER?</h1>
+          <h1 class="titulo-principal-sobre">INTERESSADO EM VENDER?</h1> <!--título-->
           <p class="subtitulo-principal-sobre">
-            A A&M Precatórios conecta você às melhores oportunidades na negociação de precatórios.
+            A A&M Precatórios conecta você às melhores oportunidades na negociação de precatórios. <!--subtítulo-->
           </p>
         </div>
       </div>
 
-      <div class="row justify-content-center mb-4">
+      <div class="row justify-content-center mb-4"> <!--sobre-->
         <div class="col-md-8">
           <div class="card-sobre text-white text-center p-4">
             <h4 class="mb-3">QUEM SOMOS?</h4>
-            <p id="textoSobreAEmpresa"><strong>A A&M Precatórios é uma empresa especializada na compra e negociação de precatórios federais, estaduais e municipais. 
-              Nascemos com o propósito de oferecer soluções ágeis, seguras e transparentes para credores que desejam antecipar seus créditos com tranquilidade e confiança.
-            A A&M acredita que cada negociação é única — por isso, ouvimos, entendemos e construímos relações baseadas na confiança e responsabilidade.</strong></p>
+            <p id="textoSobreAEmpresa"><strong>A A&M Precatórios é uma empresa especializada na compra e negociação de
+                precatórios federais, estaduais e municipais.
+                Nascemos com o propósito de oferecer soluções ágeis, seguras e transparentes para credores que desejam
+                antecipar seus créditos com tranquilidade e confiança.
+                A A&M acredita que cada negociação é única — por isso, ouvimos, entendemos e construímos relações
+                baseadas na confiança e responsabilidade.</strong></p>
           </div>
         </div>
       </div>
 
-      <div class="row justify-content-center text-start mb-4">
+      <div class="row justify-content-center text-start mb-4"> <!--qualidades-->
         <div class="col-md-8" id="sobreEmpresaRodape">
           <p><i class="bi bi-shield-check" id="icone"></i> Transparência, seriedade e especialização.</p>
-          <p><i class="bi bi-clock" id="icone"></i>Oferecemos as melhores propostas para a venda do seu precatório, sempre
+          <p><i class="bi bi-clock" id="icone"></i>Oferecemos as melhores propostas para a venda do seu precatório,
+            sempre
             respeitando a sua confiança.</p>
         </div>
       </div>
 
-      <div class="row justify-content-center text-center">
+      <div class="row justify-content-center text-center"> <!--botão comprar-->
         <div class="col-md-6">
           <button id="btn-interesse" class="btn-comprar">TEM INTERESSE? CLIQUE AQUI</button>
         </div>
       </div>
-
     </div>
+
   </section>
 
 
-  <!-- section escolha --> <!-- quarta página -->
+  <!-- section escolha/quarta página -->
   <section id="motivosEscolha" class="position-relative py-5 bg-light">
-    <div id="logoPag4" class="marca-dagua azul"></div>
+
+    <div id="logoPag4" class="marca-dagua azul"></div> <!--marca dágua-->
 
     <div class="container position-relative" style="z-index: 1;">
       <div class="row justify-content-center text-center mb-4">
         <div class="col-lg-8">
-          <h1 class="titulo-principal-motivo">POR QUE ESCOLHER A A&M PRECATÓRIOS?</h1>
+          <h1 class="titulo-principal-motivo">POR QUE ESCOLHER A A&M PRECATÓRIOS?</h1> <!--título-->
         </div>
 
         <!--cards motivos-->
         <div class="row justify-content-center g-4 my-5">
 
-            <!-- card 1 -->
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="card text-center shadow rounded card-ponto">
-                <div id="card-body-motivos" class="card-body">
-                  <small class="text-muted d-block mb-2"></small>
-                  <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
-                    Atendimento personalizado
-                  </div>
-                  <p class="fw-bold mt-3 osMotivos">Cada cliente é único. A equipe da A&M oferece um atendimento humanizado, avaliando individualmente cada caso para propor a melhor solução, com total transparência.</p>
+          <!-- card 1 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card text-center shadow rounded card-ponto">
+              <div id="card-body-motivos" class="card-body">
+                <small class="text-muted d-block mb-2"></small>
+                <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
+                  Atendimento personalizado
                 </div>
-              </div>
-            </div>
-
-            <!-- card 2 -->
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="card text-center shadow rounded card-ponto">
-                <div class="card-body">
-                  <small class="text-muted d-block mb-2"></small>
-                  <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
-                    Especialização em precatórios
-                  </div>
-                  <p class="fw-bold mt-3 osMotivos">A A&M é uma empresa focada exclusivamente nesse nicho, com profundo conhecimento jurídico e para garantir segurança e agilidade em todo o processo.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- card 3 -->
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="card text-center shadow rounded card-ponto">
-                <div class="card-body">
-                  <small class="text-muted d-block mb-2"></small>
-                  <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
-                    Propostas justas e competitivas
-                  </div>
-                  <p class="fw-bold mt-3 osMotivos">A A&M busca sempre propostas em todo o mercado de precatório, respeitando o momento do cliente e as particularidades do precatório, com margens extremamente competitivas.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- card 4 -->
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="card text-center shadow rounded card-ponto">
-                <div class="card-body">
-                  <small class="text-muted d-block mb-2"></small>
-                  <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
-                    Transparência e credibilidade
-                  </div>
-                  <p class="fw-bold mt-3 osMotivos">A empresa preza por relações de confiança, auxiliando em análises dos contratos e documentações. Você sabe exatamente o que está negociando.</p>
-                </div>
+                <p class="fw-bold mt-3 osMotivos">Cada cliente é único. A equipe da A&M oferece um atendimento
+                  humanizado, avaliando individualmente cada caso para propor a melhor solução, com total transparência.
+                </p>
               </div>
             </div>
           </div>
 
-          <button id="btnPag4">TEM INTERESSE? CLIQUE AQUI</button>
+          <!-- card 2 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card text-center shadow rounded card-ponto">
+              <div class="card-body">
+                <small class="text-muted d-block mb-2"></small>
+                <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
+                  Especialização em precatórios
+                </div>
+                <p class="fw-bold mt-3 osMotivos">A A&M é uma empresa focada exclusivamente nesse nicho, com profundo
+                  conhecimento jurídico e para garantir segurança e agilidade em todo o processo.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card text-center shadow rounded card-ponto">
+              <div class="card-body">
+                <small class="text-muted d-block mb-2"></small>
+                <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
+                  Propostas justas e competitivas
+                </div>
+                <p class="fw-bold mt-3 osMotivos">A A&M busca sempre propostas em todo o mercado de precatório,
+                  respeitando o momento do cliente e as particularidades do precatório, com margens extremamente
+                  competitivas.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card text-center shadow rounded card-ponto">
+              <div class="card-body">
+                <small class="text-muted d-block mb-2"></small>
+                <div class="badge text-white mb-3 px-3 py-2 tituloDosMotivos">
+                  Transparência e credibilidade
+                </div>
+                <p class="fw-bold mt-3 osMotivos">A empresa preza por relações de confiança, auxiliando em análises dos
+                  contratos e documentações. Você sabe exatamente o que está negociando.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="btnPag4">TEM INTERESSE? CLIQUE AQUI</button> <!--botão comprar-->
 
       </div>
     </div>
+
   </section>
 
-  <!-- section passos --> <!-- quinta página -->
+  <!-- section passos/quinta página -->
   <section id="passos-section" class="position-relative py-5 bg-light">
-    <div id="logoPag5" class="marca-dagua branco"></div>
+
+    <div id="logoPag5" class="marca-dagua branco"></div> <!--marca dágua-->
 
     <div class="container-fluid position-relative" style="z-index: 1;">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 text-center">
-          <h1 id="titulopag5">VEJA COMO É SIMPLES VENDER SEU PRECATÓRIO</h1>
+          <h1 id="titulopag5">VEJA COMO É SIMPLES VENDER SEU PRECATÓRIO</h1> <!--título-->
         </div>
       </div>
 
@@ -263,7 +277,8 @@
                 <div class="badge bg-light text-black mb-3 px-3 py-2">
                   ANÁLISE
                 </div>
-                <p class="fw-bold mt-3 text-white">Após o aceite da proposta, é realizada uma análise jurídica do precatório e do credor. </p>
+                <p class="fw-bold mt-3 text-white">Após o aceite da proposta, é realizada uma análise jurídica do
+                  precatório e do credor. </p>
               </div>
             </div>
           </div>
@@ -276,7 +291,9 @@
                 <div class="badge bg-light text-black mb-3 px-3 py-2">
                   CONTRATO
                 </div>
-                <p class="fw-bold mt-3 text-white">Após a análise jurídica, marca-se com o cartório data e hora para assinar a escritura. Todos os procedimentos são realizados de forma online e fácil, sem burocracia.</p>
+                <p class="fw-bold mt-3 text-white">Após a análise jurídica, marca-se com o cartório data e hora para
+                  assinar a escritura. Todos os procedimentos são realizados de forma online e fácil, sem burocracia.
+                </p>
               </div>
             </div>
           </div>
@@ -295,26 +312,28 @@
           </div>
         </div>
 
-        <button id="botaoPag5" class="btn-comprar">QUERO NEGOCIAR MEU PRECATÓRIO</button>
+        <button id="botaoPag5" class="btn-comprar">QUERO NEGOCIAR MEU PRECATÓRIO</button> <!--botão comprar-->
 
       </div>
     </div>
+
   </section>
 
   <!-- banner seja parceiro/dentro da quinta página-->
   <section id="contato" class="position-relative pt-5 pb-2 bg-light">
-    <div id="logoPag6" class="marca-dagua branco"></div>
 
-    <div id="banner" class="container-fluid text-center">
-      <h1 id="tamanhoDoTitulo" class="fw-bold mb-4">SEJA UM PARCEIRO DA A&M PRECATÓRIOS!</h1>
+    <div id="logoPag6" class="marca-dagua branco"></div> <!--marca dágua-->
+
+    <div id="banner" class="container-fluid text-center"> <!--banner-->
+      <h1 id="tamanhoDoTitulo" class="fw-bold mb-4">SEJA UM PARCEIRO DA A&M PRECATÓRIOS!</h1> <!--título-->
       <div id="cardDentroDoBanner" class="card text-center shadow rounded mx-auto">
         <div id="logoBanner" class="marca-dagua branco"></div>
         <div class="card-body">
-          <p id="textoBanner" class="fw-bold mb-4">
+          <p id="textoBanner" class="fw-bold mb-4"> <!--subtítulo-->
             SOMOS A PONTE PARA NEGOCIAÇÕES SEGURAS E<br>
             ESTRATÉGICAS EM PRECATÓRIOS.
           </p>
-          <a id="botaoPag6" class="btn">QUERO SER PARCEIRO</a>
+          <a id="botaoPag6" class="btn">QUERO SER PARCEIRO</a> <!--botão comprar-->
         </div>
       </div>
     </div>
@@ -346,6 +365,7 @@
 
         <!-- formulário -->
         <div id="parteAtrasDoFormulario" class="text-white py-2">
+
           <form id="formExemplo" action="https://formsubmit.co/marcos@amprecatorios.com" method="POST" target="_blank">
             <!-- Campo Nome -->
             <div class="mb-3">
@@ -356,7 +376,8 @@
             <!-- Campo Telefone -->
             <div class="mb-3">
               <label for="telefone" class="form-label text-white">Telefone</label>
-              <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(31) 99999-9999" required>
+              <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(31) 99999-9999"
+                required>
             </div>
 
             <!-- Campo Processo -->
@@ -368,7 +389,8 @@
             <!-- Campo Mensagem -->
             <div class="mb-3">
               <label for="mensagem" class="form-label text-white">Escreva sua mensagem</label>
-              <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+              <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem"
+                required></textarea>
             </div>
 
             <!-- Configurações do FormSubmit -->
@@ -377,10 +399,10 @@
 
             <!-- Botão -->
             <button id="botaoFormulario" type="submit" class="btn btn-light">Enviar</button>
+
           </form>
         </div>
       </div>
-
     </div>
 
     <!-- rodapé -->
@@ -389,10 +411,12 @@
         <div class="container-fluid px-0 d-flex align-items-center">
           <img id="logoRodape" src="assets/img/logo rodape2.png" alt="Logo A&M">
           <span id="direitosAutorais" class="fw-bold mx-auto text-center">A&M PRECATÓRIOS 2025 © Todos os direitos
-            reservados</span>
+            reservados</span> <!--direitos autorais-->
         </div>
-        <hr class="footer-divider">
-        
+
+        <hr class="footer-divider"> <!--linha de dividir-->
+
+        <!--contato-->
         <div class="container py-1">
           <div class="d-flex justify-content-between flex-wrap">
             <div class="flex-fill text-center">
@@ -400,17 +424,21 @@
               <small class="text-white infoRodape">(31) 99890-3846</small>
             </div>
 
+            <!--e-mail-->
             <div class="flex-fill text-center">
               <div class="fw-bold opcoesRodape"><i class="bi bi-envelope"></i> E-mail</div>
               <small class="text-white infoRodape">marcos@amprecatorios.com</small><br>
               <small class="text-white infoRodape">adrielle@amprecatorios.com</small>
             </div>
 
+            <!--endereço-->
             <div class="flex-fill text-center">
               <div class="fw-bold opcoesRodape"><i class="bi bi-geo-alt"></i> Endereço</div>
-              <small class="text-white infoRodape"> R. São Paulo da Cruz, 121 - Barreiro,<br> Belo Horizonte - MG, 30642-060, Brasil</small>
+              <small class="text-white infoRodape"> R. São Paulo da Cruz, 121 - Barreiro,<br> Belo Horizonte - MG,
+                30642-060, Brasil</small>
             </div>
 
+            <!--cnpj-->
             <div class="flex-fill text-center">
               <div class="fw-bold opcoesRodape">CNPJ</div>
               <small class="text-white infoRodape">53.639.277/0001-25</small>
@@ -421,6 +449,7 @@
               <small class="text-white">razão social</small>
             </div> -->
 
+            <!--institucional-->
             <div class="flex-fill text-center">
               <div class="fw-bold opcoesRodape">Institucional</div>
               <nav aria-label="Links do rodapé">
@@ -435,77 +464,76 @@
             </div>
           </div>
         </div>
-
-
       </div>
 
-
     </footer>
+
   </section>
-  
-    <script>
-      const numeroWhatsApp = '553198903846';
 
-      const mensagem = 'Olá! Tenho interesse em negociar meu precatório.';
+  <!--javascript-->
+  <script>
+    const numeroWhatsApp = '553198903846';
 
-      const botoesZap = [
-        '.btn-zap',
-        '#btnPag4',
-        '.btn-comprar',
-        '#adquiraPrecatorio',
-        '.btn-melhorProposta',
-        '#botaoPag6',
-        '#botaoPag5'
-      ];
+    const mensagem = 'Olá! Tenho interesse em negociar meu precatório.';
 
-      botoesZap.forEach(seletor => {
-        document.querySelectorAll(seletor).forEach(botao => {
-          botao.addEventListener('click', function () {
-            const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
-            window.open(url, '_blank');
-          });
-        });
-      });
-    </script>
+    const botoesZap = [
+      '.btn-zap',
+      '#btnPag4',
+      '.btn-comprar',
+      '#adquiraPrecatorio',
+      '.btn-melhorProposta',
+      '#botaoPag6',
+      '#botaoPag5'
+    ];
 
-    <script>
-      const mapaMenu = {
-        'DEPOIMENTOS': '#depoimento-section',
-        'INÍCIO': '#inicio',
-        'SOBRE': '#sobreEmpresa',
-        'COMO FUNCIONA': '#passos-section'
-      };
-
-      document.querySelectorAll('.menu-btn, .btn-atalho').forEach(botao => {
+    botoesZap.forEach(seletor => {
+      document.querySelectorAll(seletor).forEach(botao => {
         botao.addEventListener('click', function () {
-          const texto = botao.textContent.trim().toUpperCase();
-          const alvo = mapaMenu[texto];
-
-          if (alvo) {
-            document.querySelector(alvo).scrollIntoView({ behavior: 'smooth' });
-          }
+          const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+          window.open(url, '_blank');
         });
       });
-    </script>
+    });
+  </script>
 
-    <script>
-      document.getElementById('formExemplo').addEventListener('submit', function (e) {
-        
-        const nome = document.getElementById('nome').value.trim();
-        const telefone = document.getElementById('telefone').value.trim();
-        const processo = document.getElementById('processo').value.trim();
-        const mensagem = document.getElementById('mensagem').value.trim();
+  <script>
+    const mapaMenu = {
+      'DEPOIMENTOS': '#depoimento-section',
+      'INÍCIO': '#inicio',
+      'SOBRE': '#sobreEmpresa',
+      'COMO FUNCIONA': '#passos-section'
+    };
 
-        const textoWpp = `Olá, me chamo *${nome}*.%0A` +
-                        `Meu telefone: *${telefone}*%0A` +
-                        `Número do processo: *${processo}*%0A` +
-                        `Mensagem: ${mensagem}`;
+    document.querySelectorAll('.menu-btn, .btn-atalho').forEach(botao => {
+      botao.addEventListener('click', function () {
+        const texto = botao.textContent.trim().toUpperCase();
+        const alvo = mapaMenu[texto];
 
-        const numeroDestino = '5531998903846'; 
-
-        window.open(`https://wa.me/${numeroDestino}?text=${textoWpp}`, '_blank');
+        if (alvo) {
+          document.querySelector(alvo).scrollIntoView({ behavior: 'smooth' });
+        }
       });
-    </script>
+    });
+  </script>
+
+  <script>
+    document.getElementById('formExemplo').addEventListener('submit', function (e) {
+
+      const nome = document.getElementById('nome').value.trim();
+      const telefone = document.getElementById('telefone').value.trim();
+      const processo = document.getElementById('processo').value.trim();
+      const mensagem = document.getElementById('mensagem').value.trim();
+
+      const textoWpp = `Olá, me chamo *${nome}*.%0A` +
+        `Meu telefone: *${telefone}*%0A` +
+        `Número do processo: *${processo}*%0A` +
+        `Mensagem: ${mensagem}`;
+
+      const numeroDestino = '5531998903846';
+
+      window.open(`https://wa.me/${numeroDestino}?text=${textoWpp}`, '_blank');
+    });
+  </script>
 
 </body>
 
